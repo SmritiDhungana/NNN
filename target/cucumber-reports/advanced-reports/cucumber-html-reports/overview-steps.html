@@ -1,0 +1,2742 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>AP-RegressionsmritiBranch1</td>
+              <td>1</td>
+            <td>09 Sep 2022, 08:55</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Click_on_EFS_and_Validate_total_records_Returned()</td>
+              <td>2</td>
+              <td class="duration" data-value="20189500000">20.189</td>
+              <td class="duration" data-value="20189500000">20.212</td>
+              <td class="duration" data-value="40379000000">40.379</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Click_on_Include_Complete_and_Validate_total_records_Returned()</td>
+              <td>2</td>
+              <td class="duration" data-value="26160000000">26.160</td>
+              <td class="duration" data-value="26160000000">26.536</td>
+              <td class="duration" data-value="52320000000">52.320</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Click_on_Recurring_Only_and_Validate_Total_Records_Returned_and_Total_Record()</td>
+              <td>2</td>
+              <td class="duration" data-value="20467500000">20.467</td>
+              <td class="duration" data-value="20467500000">20.553</td>
+              <td class="duration" data-value="40935000000">40.935</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Click_on_Status_Inactive(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5809000000">5.809</td>
+              <td class="duration" data-value="5809000000">5.809</td>
+              <td class="duration" data-value="5809000000">5.809</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Click_on_View_on_Action_column_at_first()</td>
+              <td>2</td>
+              <td class="duration" data-value="430000000">0.430</td>
+              <td class="duration" data-value="430000000">0.511</td>
+              <td class="duration" data-value="860000000">0.860</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Click_on_crossIconPopup()</td>
+              <td>2</td>
+              <td class="duration" data-value="90000000">0.090</td>
+              <td class="duration" data-value="90000000">0.109</td>
+              <td class="duration" data-value="180000000">0.180</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Close_all_open_Browsers_for_Agent_Settlement_Adjustments()</td>
+              <td>1</td>
+              <td class="duration" data-value="3903000000">3.903</td>
+              <td class="duration" data-value="3903000000">3.903</td>
+              <td class="duration" data-value="3903000000">3.903</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Close_all_open_Browsers_on_EBH_for_Agent_Settlement_Adjustments()</td>
+              <td>10</td>
+              <td class="duration" data-value="1235100000">1.235</td>
+              <td class="duration" data-value="1235100000">3.230</td>
+              <td class="duration" data-value="12351000000">12.351</td>
+              <td class="failed">60.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.De_select_the_Include_Complete_button_select_the_Report_button_Search_Results_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="16638000000">16.638</td>
+              <td class="duration" data-value="16638000000">16.638</td>
+              <td class="duration" data-value="16638000000">16.638</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.De_select_the_Recurring_Only_button_select_the_Report_button_Search_Results_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="16521000000">16.521</td>
+              <td class="duration" data-value="16521000000">16.521</td>
+              <td class="duration" data-value="16521000000">16.521</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Enter_Agent_Code_as_and_click(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="11495000000">11.495</td>
+              <td class="duration" data-value="11495000000">11.495</td>
+              <td class="duration" data-value="11495000000">11.495</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Enter_Vendor_ID_as_and_click(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1496000000">1.496</td>
+              <td class="duration" data-value="1496000000">1.496</td>
+              <td class="duration" data-value="1496000000">1.496</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Enter_the_required_fields(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="13806000000">13.806</td>
+              <td class="duration" data-value="13806000000">13.806</td>
+              <td class="duration" data-value="13806000000">13.806</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Enter_the_url_for_EBH_Agent_Settlement_Adjustments()</td>
+              <td>11</td>
+              <td class="duration" data-value="1085454545">1.085</td>
+              <td class="duration" data-value="1085454545">3.657</td>
+              <td class="duration" data-value="11940000000">11.940</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Login_to_the_Agents_Portal_with_username_and_password_for_EBH_Agent_Settlement_Adjustments(java.lang.String,java.lang.String)</td>
+              <td>11</td>
+              <td class="duration" data-value="1679545454">1.679</td>
+              <td class="duration" data-value="1679545454">6.412</td>
+              <td class="duration" data-value="18475000000">18.475</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Navigate_to_Agent_Settlement_Adjustments()</td>
+              <td>11</td>
+              <td class="duration" data-value="3026181818">3.026</td>
+              <td class="duration" data-value="3026181818">3.422</td>
+              <td class="duration" data-value="33288000000">33.288</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Navigate_to_the_Corporate_Page_on_Main_Menu_for_Agent_Settlement_Adjustments()</td>
+              <td>11</td>
+              <td class="duration" data-value="589090909">0.589</td>
+              <td class="duration" data-value="589090909">0.791</td>
+              <td class="duration" data-value="6480000000">6.480</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Navigate_to_the_Settlements_page_for_Agent_Settlement_Adjustments()</td>
+              <td>11</td>
+              <td class="duration" data-value="428272727">0.428</td>
+              <td class="duration" data-value="428272727">0.700</td>
+              <td class="duration" data-value="4711000000">4.711</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Run_Test_for_on_Browser_for_EBH_Agent_Settlement_Adjustments(java.lang.String,java.lang.String)</td>
+              <td>11</td>
+              <td class="duration" data-value="1329000000">1.329</td>
+              <td class="duration" data-value="1329000000">1.706</td>
+              <td class="duration" data-value="14619000000">14.619</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Select_Quick_Entry()</td>
+              <td>1</td>
+              <td class="duration" data-value="6564000000">6.564</td>
+              <td class="duration" data-value="6564000000">6.564</td>
+              <td class="duration" data-value="6564000000">6.564</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Select_Save_Click_Yes_on_Conformation()</td>
+              <td>1</td>
+              <td class="duration" data-value="4702000000">4.702</td>
+              <td class="duration" data-value="4702000000">4.702</td>
+              <td class="duration" data-value="4702000000">4.702</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Validate_Pay_Code_has_ES_and_ME()</td>
+              <td>2</td>
+              <td class="duration" data-value="1225000000">1.225</td>
+              <td class="duration" data-value="1225000000">1.264</td>
+              <td class="duration" data-value="2450000000">2.450</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Validate_VendorID_Vendor_Code_Description_of(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="11112000000">11.112</td>
+              <td class="duration" data-value="11112000000">11.140</td>
+              <td class="duration" data-value="22224000000">22.224</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Validate_Vendor_Code()</td>
+              <td>2</td>
+              <td class="duration" data-value="95000000">0.095</td>
+              <td class="duration" data-value="95000000">0.116</td>
+              <td class="duration" data-value="190000000">0.190</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Validate_the_Records_Returned_for_Delete_with_Database_Record(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1131000000">1.131</td>
+              <td class="duration" data-value="1131000000">1.131</td>
+              <td class="duration" data-value="1131000000">1.131</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.Validate_the_Records_Returned_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="11158000000">11.158</td>
+              <td class="duration" data-value="11158000000">11.158</td>
+              <td class="duration" data-value="11158000000">11.158</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.change_ACTIVE_status_to_COMPLETE_Select_NO_Button_Confirm_Status_remains_as_ACTIVE(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="24712000000">24.712</td>
+              <td class="duration" data-value="24712000000">24.712</td>
+              <td class="duration" data-value="24712000000">24.712</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.change_ACTIVE_status_to_COMPLETE_Select_YES_Button_Confirm_Status_changes_to_COMPLETE(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.change_COMPLETE_status_to_ACTIVE_Select_YES_Button_Confirm_ACTIVE_Status_was_accepted(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.change_the_Max_Limit_to_a_Value_Greater_Than_current_Total_to_Date_Select_the_Save_button(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.change_the_Max_Limit_to_a_value_Current_Total_to_Date_Select_the_Save_button(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2060000000">2.060</td>
+              <td class="duration" data-value="2060000000">2.060</td>
+              <td class="duration" data-value="2060000000">2.060</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.confirm_the_company_code_vendor_code_all_locations_and_vendor_name_are_displayed_in_header_in_blue_font(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5068000000">5.068</td>
+              <td class="duration" data-value="5068000000">5.068</td>
+              <td class="duration" data-value="5068000000">5.068</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.de_select_Recurring_Only()</td>
+              <td>1</td>
+              <td class="duration" data-value="8422000000">8.422</td>
+              <td class="duration" data-value="8422000000">8.422</td>
+              <td class="duration" data-value="8422000000">8.422</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.enter_Agent_Code_Pay_Code_and_Order_Number_and_Click_on_Search_Button(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.enter_Agent_Code_and_Click_on_Search_Button(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="150039000000">2:30.039</td>
+              <td class="duration" data-value="150039000000">2:30.039</td>
+              <td class="duration" data-value="150039000000">2:30.039</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.enter_Agent_Code_enter_Pay_Code_and_Click_on_Search_Button(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.enter_Vendor_Code_Pay_Code_and_Order_Number_and_Click_on_Search_Button(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="16273000000">16.273</td>
+              <td class="duration" data-value="16273000000">16.273</td>
+              <td class="duration" data-value="16273000000">16.273</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.enter_Vendor_Code_and_Click(java.lang.String)</td>
+              <td>5</td>
+              <td class="duration" data-value="1528600000">1.528</td>
+              <td class="duration" data-value="1528600000">1.681</td>
+              <td class="duration" data-value="7643000000">7.643</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.enter_Vendor_Code_and_Click_on_Search_Button(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="10339666666">10.339</td>
+              <td class="duration" data-value="10339666666">10.381</td>
+              <td class="duration" data-value="31019000000">31.019</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.enter_Vendor_Code_enter_Pay_Code_and_Click_on_Search_Button(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="13423000000">13.423</td>
+              <td class="duration" data-value="13423000000">13.423</td>
+              <td class="duration" data-value="13423000000">13.423</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.enter_an_End_Date_that_is_after_the_Start_Date_and_not_in_the_past(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="4722000000">4.722</td>
+              <td class="duration" data-value="4722000000">4.722</td>
+              <td class="duration" data-value="4722000000">4.722</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.enter_an_End_Date_that_is_after_the_Start_Date_and_not_in_the_past_Select_the_Save_button(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="11244000000">11.244</td>
+              <td class="duration" data-value="11244000000">11.244</td>
+              <td class="duration" data-value="11244000000">11.244</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.enter_the_Max_Limit_to_a_value_Less_Than_current_Total_to_Date_Select_the_Save_button(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="11235000000">11.235</td>
+              <td class="duration" data-value="11235000000">11.235</td>
+              <td class="duration" data-value="11235000000">11.235</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_and_RECURRING_ONLY_both_are_DE_SELECTED_Validate_the_Records_Returned_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="47881000000">47.881</td>
+              <td class="duration" data-value="47881000000">47.881</td>
+              <td class="duration" data-value="47881000000">47.881</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_and_RECURRING_ONLY_both_are_DE_SELECTED_Validate_the_Records_Returned_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="13995000000">13.995</td>
+              <td class="duration" data-value="13995000000">13.995</td>
+              <td class="duration" data-value="13995000000">13.995</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_and_RECURRING_ONLY_both_are_DE_SELECTED_Validate_the_Records_Returned_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="13543000000">13.543</td>
+              <td class="duration" data-value="13543000000">13.543</td>
+              <td class="duration" data-value="13543000000">13.543</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_and_RECURRING_ONLY_both_are_DE_SELECTED_Validate_the_Records_Returned_with_Database_Record_and_Agent_Code(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_and_RECURRING_ONLY_both_are_DE_SELECTED_Validate_the_Records_Returned_with_Database_Record_and_Agent_Code(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_and_RECURRING_ONLY_both_are_DE_SELECTED_Validate_the_Records_Returned_with_Database_Record_and_Agent_Code(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_and_RECURRING_ONLY_both_are_SELECTED_Validate_the_Records_Returned_for_Advanced_Search_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="12557000000">12.557</td>
+              <td class="duration" data-value="12557000000">12.557</td>
+              <td class="duration" data-value="12557000000">12.557</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_and_RECURRING_ONLY_both_are_SELECTED_Validate_the_Records_Returned_for_Advanced_Search_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="12535000000">12.535</td>
+              <td class="duration" data-value="12535000000">12.535</td>
+              <td class="duration" data-value="12535000000">12.535</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_and_RECURRING_ONLY_both_are_SELECTED_Validate_the_Records_Returned_for_Advanced_Search_with_Database_Record_and_Agent_Code(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_and_RECURRING_ONLY_both_are_SELECTED_Validate_the_Records_Returned_for_Advanced_Search_with_Database_Record_and_Agent_Code(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_and_RECURRING_ONLY_both_are_SELECTED_Validate_the_Records_Returned_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="10799000000">10.799</td>
+              <td class="duration" data-value="10799000000">10.799</td>
+              <td class="duration" data-value="10799000000">10.799</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_and_RECURRING_ONLY_both_are_SELECTED_Validate_the_Records_Returned_with_Database_Record_and_Agent_Code(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_is_SELECTED_Validate_the_Records_Returned_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="62521000000">1:2.521</td>
+              <td class="duration" data-value="62521000000">1:2.521</td>
+              <td class="duration" data-value="62521000000">1:2.521</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_is_SELECTED_Validate_the_Records_Returned_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="10609000000">10.609</td>
+              <td class="duration" data-value="10609000000">10.609</td>
+              <td class="duration" data-value="10609000000">10.609</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_is_SELECTED_Validate_the_Records_Returned_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="10477000000">10.477</td>
+              <td class="duration" data-value="10477000000">10.477</td>
+              <td class="duration" data-value="10477000000">10.477</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_is_SELECTED_Validate_the_Records_Returned_with_Database_Record_and_Agent_Code(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_is_SELECTED_Validate_the_Records_Returned_with_Database_Record_and_Agent_Code(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_INCLUDE_COMPLETE_is_SELECTED_Validate_the_Records_Returned_with_Database_Record_and_Agent_Code(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_RECURRING_ONLY_is_SELECTED_Validate_Records_Returned_for_Advanced_Search_with_Database_Record_and_Agent_Code(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_RECURRING_ONLY_is_SELECTED_Validate_the_Records_Returned_for_Advanced_Search_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="13620000000">13.620</td>
+              <td class="duration" data-value="13620000000">13.620</td>
+              <td class="duration" data-value="13620000000">13.620</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_RECURRING_ONLY_is_SELECTED_Validate_the_Records_Returned_for_Advanced_Search_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="13568000000">13.568</td>
+              <td class="duration" data-value="13568000000">13.568</td>
+              <td class="duration" data-value="13568000000">13.568</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_RECURRING_ONLY_is_SELECTED_Validate_the_Records_Returned_for_Advanced_Search_with_Database_Record_and_AGENT_CODE(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_RECURRING_ONLY_is_SELECTED_Validate_the_Records_Returned_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="13886000000">13.886</td>
+              <td class="duration" data-value="13886000000">13.886</td>
+              <td class="duration" data-value="13886000000">13.886</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_Records_when_RECURRING_ONLY_is_SELECTED_Validate_the_Records_Returned_with_Database_Record_and_Agent_Code(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_SEARCH_RESULTS_Excel_Report_from_Downloads()</td>
+              <td>1</td>
+              <td class="duration" data-value="5576000000">5.576</td>
+              <td class="duration" data-value="5576000000">5.576</td>
+              <td class="duration" data-value="5576000000">5.576</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_SEARCH_RESULTS_Excel_Report_from_Downloads_when_Include_Complete_De_selected()</td>
+              <td>1</td>
+              <td class="duration" data-value="5666000000">5.666</td>
+              <td class="duration" data-value="5666000000">5.666</td>
+              <td class="duration" data-value="5666000000">5.666</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_SEARCH_RESULTS_Excel_Report_from_Downloads_when_Recurring_Only_De_selected()</td>
+              <td>1</td>
+              <td class="duration" data-value="5529000000">5.529</td>
+              <td class="duration" data-value="5529000000">5.529</td>
+              <td class="duration" data-value="5529000000">5.529</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.get_the_Records_Returned_on_Agent_Settlement_Adjustments_Table()</td>
+              <td>1</td>
+              <td class="duration" data-value="21126000000">21.126</td>
+              <td class="duration" data-value="21126000000">21.126</td>
+              <td class="duration" data-value="21126000000">21.126</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.select_the_Advanced_Search_button()</td>
+              <td>4</td>
+              <td class="duration" data-value="8264000000">8.264</td>
+              <td class="duration" data-value="8264000000">8.448</td>
+              <td class="duration" data-value="33056000000">33.056</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.select_the_First_Edit_Button_on_Action_Column()</td>
+              <td>3</td>
+              <td class="duration" data-value="111000000">0.111</td>
+              <td class="duration" data-value="111000000">0.332</td>
+              <td class="duration" data-value="333000000">0.333</td>
+              <td class="failed">33.33%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.select_the_First_Edit_Button_on_Action_Column_on_Include_Complete_again()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.select_the_First_View_Button_on_Action_Column()</td>
+              <td>1</td>
+              <td class="duration" data-value="352000000">0.352</td>
+              <td class="duration" data-value="352000000">0.352</td>
+              <td class="duration" data-value="352000000">0.352</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.select_the_New_Button_Enter_required_fields(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="21357000000">21.357</td>
+              <td class="duration" data-value="21357000000">21.357</td>
+              <td class="duration" data-value="21357000000">21.357</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.select_the_New_Button_Enter_the_required_fields(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="19314000000">19.314</td>
+              <td class="duration" data-value="19314000000">19.314</td>
+              <td class="duration" data-value="19314000000">19.314</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.select_the_Report_button_SEARCH_RESULTS_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="8316000000">8.316</td>
+              <td class="duration" data-value="8316000000">8.316</td>
+              <td class="duration" data-value="8316000000">8.316</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.select_the_X_on_form()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.validate_Excel_Report_with_Database_Record(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1708000000">1.708</td>
+              <td class="duration" data-value="1708000000">1.708</td>
+              <td class="duration" data-value="1708000000">1.708</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.validate_SEARCH_RESULTS_Excel_Report_when_Include_Complete_is_De_selected_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="474000000">0.474</td>
+              <td class="duration" data-value="474000000">0.474</td>
+              <td class="duration" data-value="474000000">0.474</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.validate_SEARCH_RESULTS_Excel_Report_when_Recurring_Only_is_De_selected_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1336000000">1.336</td>
+              <td class="duration" data-value="1336000000">1.336</td>
+              <td class="duration" data-value="1336000000">1.336</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.validate_Total_Records_Returned_for_Agent_Code_on_EFS_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="349000000">0.349</td>
+              <td class="duration" data-value="349000000">0.349</td>
+              <td class="duration" data-value="349000000">0.349</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.validate_Total_Records_Returned_for_Agent_Code_on_Include_Complete_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="360000000">0.360</td>
+              <td class="duration" data-value="360000000">0.360</td>
+              <td class="duration" data-value="360000000">0.360</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.validate_Total_Records_Returned_for_Agent_Code_on_Recurring_Only_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="502000000">0.502</td>
+              <td class="duration" data-value="502000000">0.502</td>
+              <td class="duration" data-value="502000000">0.502</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.validate_Total_Records_Returned_on_EFS_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="383000000">0.383</td>
+              <td class="duration" data-value="383000000">0.383</td>
+              <td class="duration" data-value="383000000">0.383</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.validate_Total_Records_Returned_on_Include_Complete_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="35441000000">35.441</td>
+              <td class="duration" data-value="35441000000">35.441</td>
+              <td class="duration" data-value="35441000000">35.441</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.validate_Total_Records_Returned_on_Recurring_Only_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1265000000">1.265</td>
+              <td class="duration" data-value="1265000000">1.265</td>
+              <td class="duration" data-value="1265000000">1.265</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.validate_the_Records_Returned_WHEN_ACTIVE_TO_COMPLETE_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.validate_the_Records_Returned_when_Max_Limit_is_EQUALS_TO_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.validate_the_Records_Returned_when_Max_Limit_is_GREATER_THAN_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlementAdjustmentsStepDef.validate_the_Records_Returned_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="3075500000">3.075</td>
+              <td class="duration" data-value="3075500000">6.150</td>
+              <td class="duration" data-value="6151000000">6.151</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Add_Vendor_Code_as_in_Agent_s_You_re_Settling_Vendor_Code_Column_then_Click_on_Add(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="6357000000">6.357</td>
+              <td class="duration" data-value="6357000000">6.357</td>
+              <td class="duration" data-value="6357000000">6.357</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_Filter_Icon_on_Orders_Waiting_To_Be_Finalized()</td>
+              <td>1</td>
+              <td class="duration" data-value="64000000">0.064</td>
+              <td class="duration" data-value="64000000">0.064</td>
+              <td class="duration" data-value="64000000">0.064</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_Finalize_on_Orders_Waiting_To_Be_Finalized_Page_and_Close()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_NO_on_drop_down_item_list_and_validate_the_color_of_OWTBF_at_the_left_end_of_the_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="4465000000">4.465</td>
+              <td class="duration" data-value="4465000000">4.465</td>
+              <td class="duration" data-value="4465000000">4.465</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_Orders_Waiting_To_Be_Finalized_Button_at_the_left_end_of_the_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="613000000">0.613</td>
+              <td class="duration" data-value="613000000">0.613</td>
+              <td class="duration" data-value="613000000">0.613</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_YES_on_drop_down_item_list_for_OWTBF_as_and_validate_the_color_of_OWTBF_at_the_left_end_of_the_page(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2380000000">2.380</td>
+              <td class="duration" data-value="2380000000">2.380</td>
+              <td class="duration" data-value="2380000000">2.380</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_ADJ_on_Trans_Type_and_validate_total_records_returned_on_Agent_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5174000000">5.174</td>
+              <td class="duration" data-value="5174000000">5.174</td>
+              <td class="duration" data-value="5174000000">5.174</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_All_on_Trans_Type_and_validate_total_records_returned_on_Agent_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="10235000000">10.235</td>
+              <td class="duration" data-value="10235000000">10.235</td>
+              <td class="duration" data-value="10235000000">10.235</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_COM_on_Trans_Type_and_validate_total_records_returned_on_Agent_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="6220000000">6.220</td>
+              <td class="duration" data-value="6220000000">6.220</td>
+              <td class="duration" data-value="6220000000">6.220</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_Calculate_Commission()</td>
+              <td>1</td>
+              <td class="duration" data-value="81000000">0.081</td>
+              <td class="duration" data-value="81000000">0.081</td>
+              <td class="duration" data-value="81000000">0.081</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_Cancel()</td>
+              <td>1</td>
+              <td class="duration" data-value="6655000000">6.655</td>
+              <td class="duration" data-value="6655000000">6.655</td>
+              <td class="duration" data-value="6655000000">6.655</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_Display_Matrix()</td>
+              <td>1</td>
+              <td class="duration" data-value="70000000">0.070</td>
+              <td class="duration" data-value="70000000">0.070</td>
+              <td class="duration" data-value="70000000">0.070</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_Filter_Icon_on_Settling_Agent_Code()</td>
+              <td>1</td>
+              <td class="duration" data-value="385000000">0.385</td>
+              <td class="duration" data-value="385000000">0.385</td>
+              <td class="duration" data-value="385000000">0.385</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_Filter_Icon_on_Settling_Vendor_Code()</td>
+              <td>1</td>
+              <td class="duration" data-value="96000000">0.096</td>
+              <td class="duration" data-value="96000000">0.096</td>
+              <td class="duration" data-value="96000000">0.096</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_Ok()</td>
+              <td>4</td>
+              <td class="duration" data-value="106750000">0.106</td>
+              <td class="duration" data-value="106750000">0.123</td>
+              <td class="duration" data-value="427000000">0.427</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_Ok_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="70000000">0.070</td>
+              <td class="duration" data-value="70000000">0.070</td>
+              <td class="duration" data-value="70000000">0.070</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_Reload_All_My_Active_Agents_Not_Settled()</td>
+              <td>1</td>
+              <td class="duration" data-value="455000000">0.455</td>
+              <td class="duration" data-value="455000000">0.455</td>
+              <td class="duration" data-value="455000000">0.455</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_Search_Button_for_Agent()</td>
+              <td>1</td>
+              <td class="duration" data-value="4179000000">4.179</td>
+              <td class="duration" data-value="4179000000">4.179</td>
+              <td class="duration" data-value="4179000000">4.179</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_Search_Button_for_Pay_Codes()</td>
+              <td>1</td>
+              <td class="duration" data-value="2111000000">2.111</td>
+              <td class="duration" data-value="2111000000">2.111</td>
+              <td class="duration" data-value="2111000000">2.111</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_Search_Button_for_Vendor()</td>
+              <td>1</td>
+              <td class="duration" data-value="100000000">0.100</td>
+              <td class="duration" data-value="100000000">0.100</td>
+              <td class="duration" data-value="100000000">0.100</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_Search_Icon_on_Agent_Code()</td>
+              <td>1</td>
+              <td class="duration" data-value="110000000">0.110</td>
+              <td class="duration" data-value="110000000">0.110</td>
+              <td class="duration" data-value="110000000">0.110</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_edit_on_Action_field()</td>
+              <td>1</td>
+              <td class="duration" data-value="2910000000">2.910</td>
+              <td class="duration" data-value="2910000000">2.910</td>
+              <td class="duration" data-value="2910000000">2.910</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Click_on_ok_btn()</td>
+              <td>1</td>
+              <td class="duration" data-value="79000000">0.079</td>
+              <td class="duration" data-value="79000000">0.079</td>
+              <td class="duration" data-value="79000000">0.079</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Close_all_open_Browsers()</td>
+              <td>17</td>
+              <td class="duration" data-value="2272529411">2.272</td>
+              <td class="duration" data-value="2272529411">3.130</td>
+              <td class="duration" data-value="38633000000">38.633</td>
+              <td class="failed">94.12%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Conformation_pop_up_menu_arises_Reset_or_Continue_click_Reset()</td>
+              <td>1</td>
+              <td class="duration" data-value="14079000000">14.079</td>
+              <td class="duration" data-value="14079000000">14.079</td>
+              <td class="duration" data-value="14079000000">14.079</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Enter_Agent_Code_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="27183000000">27.183</td>
+              <td class="duration" data-value="27183000000">27.183</td>
+              <td class="duration" data-value="27183000000">27.183</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Enter_Agent_Location_Code_as_and_click(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="14795000000">14.795</td>
+              <td class="duration" data-value="14795000000">14.795</td>
+              <td class="duration" data-value="14795000000">14.795</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Enter_Agent_as_and_click(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="182000000">0.182</td>
+              <td class="duration" data-value="182000000">0.182</td>
+              <td class="duration" data-value="182000000">0.182</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Enter_Pay_Codes_as_and_click(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="150000000">0.150</td>
+              <td class="duration" data-value="150000000">0.150</td>
+              <td class="duration" data-value="150000000">0.150</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Enter_Vendor_Code_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="21405000000">21.405</td>
+              <td class="duration" data-value="21405000000">21.405</td>
+              <td class="duration" data-value="21405000000">21.405</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Enter_Vendor_as_and_click(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1732000000">1.732</td>
+              <td class="duration" data-value="1732000000">1.732</td>
+              <td class="duration" data-value="1732000000">1.732</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Get_the_details_of_Agent_Code_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2439000000">2.439</td>
+              <td class="duration" data-value="2439000000">2.439</td>
+              <td class="duration" data-value="2439000000">2.439</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Navigate_to_Agent_Commission_Calculation()</td>
+              <td>1</td>
+              <td class="duration" data-value="1085000000">1.085</td>
+              <td class="duration" data-value="1085000000">1.085</td>
+              <td class="duration" data-value="1085000000">1.085</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Navigate_to_Agent_Settlement_Inquiry()</td>
+              <td>3</td>
+              <td class="duration" data-value="15345333333">15.345</td>
+              <td class="duration" data-value="15345333333">15.725</td>
+              <td class="duration" data-value="46036000000">46.036</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Navigate_to_Agents_Currently_Being_Settled()</td>
+              <td>2</td>
+              <td class="duration" data-value="1310500000">1.310</td>
+              <td class="duration" data-value="1310500000">1.349</td>
+              <td class="duration" data-value="2621000000">2.621</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Navigate_to_the_AAR_Agent_Management_File_page()</td>
+              <td>6</td>
+              <td class="duration" data-value="13097333333">13.097</td>
+              <td class="duration" data-value="13097333333">15.791</td>
+              <td class="duration" data-value="78584000000">1:18.584</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Navigate_to_the_Agent_Commission_Maintenance_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="70000000">0.070</td>
+              <td class="duration" data-value="70000000">0.070</td>
+              <td class="duration" data-value="70000000">0.070</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Navigate_to_the_Agent_Settlement_Flag_Maintenance()</td>
+              <td>1</td>
+              <td class="duration" data-value="621000000">0.621</td>
+              <td class="duration" data-value="621000000">0.621</td>
+              <td class="duration" data-value="621000000">0.621</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Pop_Up_Menu_arises_insert_password(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="61000000">0.061</td>
+              <td class="duration" data-value="61000000">0.073</td>
+              <td class="duration" data-value="244000000">0.244</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Revert_tractor_aar_assignment_back_to_original_assignment(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="26221000000">26.221</td>
+              <td class="duration" data-value="26221000000">26.221</td>
+              <td class="duration" data-value="26221000000">26.221</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Validate_Agent_Code_Description_and_Agent_is_active()</td>
+              <td>1</td>
+              <td class="duration" data-value="12500000000">12.500</td>
+              <td class="duration" data-value="12500000000">12.500</td>
+              <td class="duration" data-value="12500000000">12.500</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Validate_Agent_Code_and_Vendor_Code()</td>
+              <td>1</td>
+              <td class="duration" data-value="119000000">0.119</td>
+              <td class="duration" data-value="119000000">0.119</td>
+              <td class="duration" data-value="119000000">0.119</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Validate_My_Active_Agents_Not_Settled_for(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2177000000">2.177</td>
+              <td class="duration" data-value="2177000000">2.177</td>
+              <td class="duration" data-value="2177000000">2.177</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Validate_Primary_Vendor_Name_and_Primary_Vendor_Code()</td>
+              <td>1</td>
+              <td class="duration" data-value="9695000000">9.695</td>
+              <td class="duration" data-value="9695000000">9.695</td>
+              <td class="duration" data-value="9695000000">9.695</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Validate_Vendor_Code_and_Total_Commission()</td>
+              <td>1</td>
+              <td class="duration" data-value="4078000000">4.078</td>
+              <td class="duration" data-value="4078000000">4.078</td>
+              <td class="duration" data-value="4078000000">4.078</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Validate_the_records_returned_on_Agents_Currently_Being_Settled()</td>
+              <td>2</td>
+              <td class="duration" data-value="61882000000">1:1.882</td>
+              <td class="duration" data-value="61882000000">1:2.783</td>
+              <td class="duration" data-value="123764000000">2:3.764</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Validate_total_records_returned()</td>
+              <td>1</td>
+              <td class="duration" data-value="3036000000">3.036</td>
+              <td class="duration" data-value="3036000000">3.036</td>
+              <td class="duration" data-value="3036000000">3.036</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Validate_you_are_on_AAR_Agent_Management_Detail_Page()</td>
+              <td>1</td>
+              <td class="duration" data-value="5104000000">5.104</td>
+              <td class="duration" data-value="5104000000">5.104</td>
+              <td class="duration" data-value="5104000000">5.104</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Validate_you_are_on_Agent_Commission_Calculation_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="4066000000">4.066</td>
+              <td class="duration" data-value="4066000000">4.066</td>
+              <td class="duration" data-value="4066000000">4.066</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Verify_Agent_Location_Code_and_Record_Returned_on_Orders_Waiting_To_Be_Finalized_Page_for(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2233000000">2.233</td>
+              <td class="duration" data-value="2233000000">2.233</td>
+              <td class="duration" data-value="2233000000">2.233</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Verify_Vendor_added_before_is_removed_from_Agent_s_You_re_Settling_Vendor_Code_Column(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1540000000">1.540</td>
+              <td class="duration" data-value="1540000000">1.540</td>
+              <td class="duration" data-value="1540000000">1.540</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Verify_Vendor_is_present_in_Agent_s_You_re_Settling_Table(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="10542000000">10.542</td>
+              <td class="duration" data-value="10542000000">10.542</td>
+              <td class="duration" data-value="10542000000">10.542</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.Verify_you_are_on_Agent_Settling_Page()</td>
+              <td>3</td>
+              <td class="duration" data-value="5071333333">5.071</td>
+              <td class="duration" data-value="5071333333">5.082</td>
+              <td class="duration" data-value="15214000000">15.214</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.click_Yes_on_Conformation_PopUp()</td>
+              <td>1</td>
+              <td class="duration" data-value="3482000000">3.482</td>
+              <td class="duration" data-value="3482000000">3.482</td>
+              <td class="duration" data-value="3482000000">3.482</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.click_on_ADJ_on_Trans_Type_and_validate_total_records_returned_on_Pay_Codes_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="10246000000">10.246</td>
+              <td class="duration" data-value="10246000000">10.246</td>
+              <td class="duration" data-value="10246000000">10.246</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.click_on_ADJ_on_Trans_Type_and_validate_total_records_returned_on_Vendor_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="10313000000">10.313</td>
+              <td class="duration" data-value="10313000000">10.313</td>
+              <td class="duration" data-value="10313000000">10.313</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.click_on_All_on_Trans_Type_and_validate_total_records_returned_on_Pay_Codes_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="10291000000">10.291</td>
+              <td class="duration" data-value="10291000000">10.291</td>
+              <td class="duration" data-value="10291000000">10.291</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.click_on_All_on_Trans_Type_and_validate_total_records_returned_on_Vendor_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="10254000000">10.254</td>
+              <td class="duration" data-value="10254000000">10.254</td>
+              <td class="duration" data-value="10254000000">10.254</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.click_on_COM_on_Trans_Type_and_validate_total_records_returned_on_Pay_Codes_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="10201000000">10.201</td>
+              <td class="duration" data-value="10201000000">10.201</td>
+              <td class="duration" data-value="10201000000">10.201</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.click_on_COM_on_Trans_Type_and_validate_total_records_returned_on_Vendor_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="10630000000">10.630</td>
+              <td class="duration" data-value="10630000000">10.630</td>
+              <td class="duration" data-value="10630000000">10.630</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.click_on_Search_Icon_on_Weekly_Cutoff_Day_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="22487000000">22.487</td>
+              <td class="duration" data-value="22487000000">22.487</td>
+              <td class="duration" data-value="22487000000">22.487</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.click_on_Search_Icon_on_Weekly_Cutoff_Time_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2477000000">2.477</td>
+              <td class="duration" data-value="2477000000">2.477</td>
+              <td class="duration" data-value="2477000000">2.477</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.confirm_choices_for_tractor_aar_login_display_an_intuitive_drop_down_and_contains_the_following_data_run_sql_and(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2513000000">2.513</td>
+              <td class="duration" data-value="2513000000">2.513</td>
+              <td class="duration" data-value="2513000000">2.513</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.confirm_tractor_aar_login_column_is_displayed_and_the_data_represented_in_the_tractor_aar_login_is_correct_by_running_the_following_sql_and(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="561572000000">9:21.572</td>
+              <td class="duration" data-value="561572000000">9:21.572</td>
+              <td class="duration" data-value="561572000000">9:21.572</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.conformation_pop_up_menu_arises_reset_or_continue_click_Continue()</td>
+              <td>3</td>
+              <td class="duration" data-value="8126000000">8.126</td>
+              <td class="duration" data-value="8126000000">8.134</td>
+              <td class="duration" data-value="24378000000">24.378</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.connect_to_and_and_Validate_the_records_for_ORDER_DOCS_and_Connect_to_and_Validate_the_records_for_tf_doc_data(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="510000000">0.510</td>
+              <td class="duration" data-value="510000000">0.510</td>
+              <td class="duration" data-value="510000000">0.510</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.connect_to_and_and_and_Validate_the_records_for_AGENT_SETTLEMENTS_and_AGENT_STL_TRANS(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="349000000">0.349</td>
+              <td class="duration" data-value="349000000">0.349</td>
+              <td class="duration" data-value="349000000">0.349</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.enter_Pro_Number_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="4078000000">4.078</td>
+              <td class="duration" data-value="4078000000">4.078</td>
+              <td class="duration" data-value="4078000000">4.078</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.get_the_details_based_on_Weekly_Cutoff_Day_and_Time_on_AAR_Agent_Management()</td>
+              <td>1</td>
+              <td class="duration" data-value="2102000000">2.102</td>
+              <td class="duration" data-value="2102000000">2.102</td>
+              <td class="duration" data-value="2102000000">2.102</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.login_to_the_Agents_Portal_with_username_and_password(java.lang.String,java.lang.String)</td>
+              <td>17</td>
+              <td class="duration" data-value="3183529411">3.183</td>
+              <td class="duration" data-value="3183529411">20.685</td>
+              <td class="duration" data-value="54120000000">54.120</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.navigate_to_the_Agent_Settling_page()</td>
+              <td>4</td>
+              <td class="duration" data-value="76500000">0.076</td>
+              <td class="duration" data-value="76500000">0.095</td>
+              <td class="duration" data-value="306000000">0.306</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.navigate_to_the_Corporate_Page_on_Main_Menu_and_to_the_Settlements_page()</td>
+              <td>17</td>
+              <td class="duration" data-value="1198470588">1.198</td>
+              <td class="duration" data-value="1198470588">4.570</td>
+              <td class="duration" data-value="20374000000">20.374</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.navigate_to_the_Settlements_page_on_Agent_Settlement()</td>
+              <td>1</td>
+              <td class="duration" data-value="1222000000">1.222</td>
+              <td class="duration" data-value="1222000000">1.222</td>
+              <td class="duration" data-value="1222000000">1.222</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.popup_Menu_arises_insert_password(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="2168000000">2.168</td>
+              <td class="duration" data-value="2168000000">2.176</td>
+              <td class="duration" data-value="4336000000">4.336</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.revert_tractor_aar_assignment_back_to_original_assignment_the_agent_is_not_verified(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="25524000000">25.524</td>
+              <td class="duration" data-value="25524000000">25.524</td>
+              <td class="duration" data-value="25524000000">25.524</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.revert_tractor_aar_assignment_back_to_original_assignment_the_agent_is_verified(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="26169000000">26.169</td>
+              <td class="duration" data-value="26169000000">26.169</td>
+              <td class="duration" data-value="26169000000">26.169</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.run_Test_for_on_Browser_and_Enter_the_url_for_EBH(java.lang.String,java.lang.String)</td>
+              <td>17</td>
+              <td class="duration" data-value="3013352941">3.013</td>
+              <td class="duration" data-value="3013352941">11.212</td>
+              <td class="duration" data-value="51227000000">51.227</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.select_tractor_aar_login_Agent_Code_and_click_on_edit(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="9515250000">9.515</td>
+              <td class="duration" data-value="9515250000">12.079</td>
+              <td class="duration" data-value="38061000000">38.061</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.test_another_aar_is_settling_the_agent_is_not_verified_update_tractor_aar_login_click_save_Select_Yes(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="26635000000">26.635</td>
+              <td class="duration" data-value="26635000000">26.635</td>
+              <td class="duration" data-value="26635000000">26.635</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.test_another_aar_is_settling_the_agent_the_AGENT_is_VERIFIED_update_tractor_aar_login_click_save_Select_Yes(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="26415000000">26.415</td>
+              <td class="duration" data-value="26415000000">26.415</td>
+              <td class="duration" data-value="26415000000">26.415</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.to_test_no_one_else_is_currently_settling_agent_update_tractor_aar_login_click_Save(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="26534000000">26.534</td>
+              <td class="duration" data-value="26534000000">26.534</td>
+              <td class="duration" data-value="26534000000">26.534</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.upon_adding_or_updating_tractor_aar_login_ensure_no_one_else_is_settling_this_agent_regardless_if_the_agent_is_verified_or_not_run_the_sql_and_update_tractor_settling_agent_code_with_the_agent_code_you_are_testing_with(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="369000000">0.369</td>
+              <td class="duration" data-value="369000000">0.369</td>
+              <td class="duration" data-value="369000000">0.369</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.upon_adding_or_updating_tractor_aar_login_ensure_no_one_else_is_settling_this_agent_the_agent_is_not_verified_run_sql(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="332000000">0.332</td>
+              <td class="duration" data-value="332000000">0.332</td>
+              <td class="duration" data-value="332000000">0.332</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.upon_adding_or_updating_tractor_aar_login_ensure_no_one_else_is_settling_this_agent_the_agent_is_verified_run_sql(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="637000000">0.637</td>
+              <td class="duration" data-value="637000000">0.637</td>
+              <td class="duration" data-value="637000000">0.637</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.upon_edit_confirm_tractor_aar_login_column_is_displayed_confirm_tractor_aar_login_is_not_blank_verify_information_to_the_right_of_the_tractor_aar_login_dropdown_when_selected()</td>
+              <td>1</td>
+              <td class="duration" data-value="7128000000">7.128</td>
+              <td class="duration" data-value="7128000000">7.128</td>
+              <td class="duration" data-value="7128000000">7.128</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_Assert_Values_On_Agent_Commission_Maintenance_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="391000000">0.391</td>
+              <td class="duration" data-value="391000000">0.391</td>
+              <td class="duration" data-value="391000000">0.391</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_My_Active_Agents_Not_Settled_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1319000000">1.319</td>
+              <td class="duration" data-value="1319000000">1.319</td>
+              <td class="duration" data-value="1319000000">1.319</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_Records_Returned_on_Agent_when_ADJ_on_Trans_Type_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="315000000">0.315</td>
+              <td class="duration" data-value="315000000">0.315</td>
+              <td class="duration" data-value="315000000">0.315</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_Records_Returned_on_Agent_when_All_on_Trans_Type_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="280000000">0.280</td>
+              <td class="duration" data-value="280000000">0.280</td>
+              <td class="duration" data-value="280000000">0.280</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_Records_Returned_on_Agent_when_COM_on_Trans_Type_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2378000000">2.378</td>
+              <td class="duration" data-value="2378000000">2.378</td>
+              <td class="duration" data-value="2378000000">2.378</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_Records_Returned_on_Pay_Codes_when_ADJ_on_Trans_Type_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1341000000">1.341</td>
+              <td class="duration" data-value="1341000000">1.341</td>
+              <td class="duration" data-value="1341000000">1.341</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_Records_Returned_on_Pay_Codes_when_All_on_Trans_Type_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1446000000">1.446</td>
+              <td class="duration" data-value="1446000000">1.446</td>
+              <td class="duration" data-value="1446000000">1.446</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_Records_Returned_on_Pay_Codes_when_COM_on_Trans_Type_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="297000000">0.297</td>
+              <td class="duration" data-value="297000000">0.297</td>
+              <td class="duration" data-value="297000000">0.297</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_Records_Returned_on_Vendor_when_ADJ_on_Trans_Type_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="306000000">0.306</td>
+              <td class="duration" data-value="306000000">0.306</td>
+              <td class="duration" data-value="306000000">0.306</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_Records_Returned_on_Vendor_when_All_on_Trans_Type_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="324000000">0.324</td>
+              <td class="duration" data-value="324000000">0.324</td>
+              <td class="duration" data-value="324000000">0.324</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_Records_Returned_on_Vendor_when_COM_on_Trans_Type_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="810000000">0.810</td>
+              <td class="duration" data-value="810000000">0.810</td>
+              <td class="duration" data-value="810000000">0.810</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_Records_Returned_with_Database_Record_and_for_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_Records_Returned_with_Database_Setting_Table_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1142000000">1.142</td>
+              <td class="duration" data-value="1142000000">1.142</td>
+              <td class="duration" data-value="1142000000">1.142</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_the_records_returned_for_AAR_Agent_Management_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1883000000">1.883</td>
+              <td class="duration" data-value="1883000000">1.883</td>
+              <td class="duration" data-value="1883000000">1.883</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_the_records_returned_for_Active_Agents_not_Assigned_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="45021000000">45.021</td>
+              <td class="duration" data-value="45021000000">45.021</td>
+              <td class="duration" data-value="45021000000">45.021</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_the_records_returned_on_Agent_Commission_Calculation_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1169000000">1.169</td>
+              <td class="duration" data-value="1169000000">1.169</td>
+              <td class="duration" data-value="1169000000">1.169</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_total_Records_returned_for_Agent_Code_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="358000000">0.358</td>
+              <td class="duration" data-value="358000000">0.358</td>
+              <td class="duration" data-value="358000000">0.358</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_total_Records_returned_for_Vendor_Code_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="570000000">0.570</td>
+              <td class="duration" data-value="570000000">0.570</td>
+              <td class="duration" data-value="570000000">0.570</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.AgentSettlingStepDef.validate_total_records_returned_with_Database_Record_and(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="911000000">0.911</td>
+              <td class="duration" data-value="911000000">0.911</td>
+              <td class="duration" data-value="911000000">0.911</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.clickOnBillCustomerPayDriverButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="19297000000">19.297</td>
+              <td class="duration" data-value="19297000000">19.297</td>
+              <td class="duration" data-value="19297000000">19.297</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.click_On_Pay_Driver_Only_Button()</td>
+              <td>1</td>
+              <td class="duration" data-value="18677000000">18.677</td>
+              <td class="duration" data-value="18677000000">18.677</td>
+              <td class="duration" data-value="18677000000">18.677</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.click_on_Book_Load_and_validate_if_the_Booking_Number_got_generated()</td>
+              <td>2</td>
+              <td class="duration" data-value="11962000000">11.962</td>
+              <td class="duration" data-value="11962000000">11.970</td>
+              <td class="duration" data-value="23924000000">23.924</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.close_All_Open_Browsers_for_Tractor_Validation()</td>
+              <td>4</td>
+              <td class="duration" data-value="907750000">0.907</td>
+              <td class="duration" data-value="907750000">0.972</td>
+              <td class="duration" data-value="3631000000">3.631</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.enterBilltoAsFromAsAndToAs(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="5208000000">5.208</td>
+              <td class="duration" data-value="5208000000">13.621</td>
+              <td class="duration" data-value="20832000000">20.832</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.enter_the_url_for_Tractor_Validation()</td>
+              <td>4</td>
+              <td class="duration" data-value="629000000">0.629</td>
+              <td class="duration" data-value="629000000">0.661</td>
+              <td class="duration" data-value="2516000000">2.516</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.inFinancialInformationCustomerChargesTabEnterFreightChargesAs(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="216250000">0.216</td>
+              <td class="duration" data-value="216250000">0.311</td>
+              <td class="duration" data-value="865000000">0.865</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.inOperationsInformationActualEnterDateAsAndTimeAs(java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="220500000">0.220</td>
+              <td class="duration" data-value="220500000">0.239</td>
+              <td class="duration" data-value="882000000">0.882</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.inReferencesTabEnterContainerAsChassisAsAndEmptyContainerAs(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="1231750000">1.231</td>
+              <td class="duration" data-value="1231750000">1.331</td>
+              <td class="duration" data-value="4927000000">4.927</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.inReferencesTabEnterReferenceOneAsReferenceTwoAsAndReferenceOneAs(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="380250000">0.380</td>
+              <td class="duration" data-value="380250000">0.419</td>
+              <td class="duration" data-value="1521000000">1.521</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.in_Financial_Information_Customer_Charges_Tab_enter_Daily_Chassis_Charges_Quantity_as_and_Rate_as(java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="381250000">0.381</td>
+              <td class="duration" data-value="381250000">0.416</td>
+              <td class="duration" data-value="1525000000">1.525</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.in_Financial_Information_Customer_Charges_Tab_enter_Fuel_Surcharges_Quantity_as_and_Rate_as(java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="320500000">0.320</td>
+              <td class="duration" data-value="320500000">0.392</td>
+              <td class="duration" data-value="1282000000">1.282</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.in_Financial_Information_Independent_Contractor_Pay_Tab_pass_the_value_from_the_TractorFive_Field_Freight_Charges_Fuel_Surcharges_and_Daily_Chassis_Charges(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="905250000">0.905</td>
+              <td class="duration" data-value="905250000">0.982</td>
+              <td class="duration" data-value="3621000000">3.621</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.in_Financial_Information_Independent_Contractor_Pay_Tab_pass_the_value_from_the_TractorFour_Field_Freight_Charges_Fuel_Surcharges_and_Daily_Chassis_Charges(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="987500000">0.987</td>
+              <td class="duration" data-value="987500000">1.168</td>
+              <td class="duration" data-value="3950000000">3.950</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.in_Financial_Information_Independent_Contractor_Pay_Tab_pass_the_value_from_the_TractorOne_Field_Freight_Charges_Fuel_Surcharges_and_Daily_Chassis_Charges(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="1219500000">1.219</td>
+              <td class="duration" data-value="1219500000">2.035</td>
+              <td class="duration" data-value="4878000000">4.878</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.in_Financial_Information_Independent_Contractor_Pay_Tab_pass_the_value_from_the_TractorSix_Field_Freight_Charges_Fuel_Surcharges_and_Daily_Chassis_Charges(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="890500000">0.890</td>
+              <td class="duration" data-value="890500000">1.075</td>
+              <td class="duration" data-value="3562000000">3.562</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.in_Financial_Information_Independent_Contractor_Pay_Tab_pass_the_value_from_the_TractorThree_Field_Freight_Charges_Fuel_Surcharges_and_Daily_Chassis_Charges(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="3806250000">3.806</td>
+              <td class="duration" data-value="3806250000">3.867</td>
+              <td class="duration" data-value="15225000000">15.225</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.in_Financial_Information_Independent_Contractor_Pay_Tab_pass_the_value_from_the_TractorTwo_Field_Freight_Charges_Fuel_Surcharges_and_Daily_Chassis_Charges(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="851250000">0.851</td>
+              <td class="duration" data-value="851250000">0.940</td>
+              <td class="duration" data-value="3405000000">3.405</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.in_Operations_Information_enter_Delivery_Appointment_Date_as_and_Time_as(java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="225250000">0.225</td>
+              <td class="duration" data-value="225250000">0.282</td>
+              <td class="duration" data-value="901000000">0.901</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.log_in_On_The_Agents_Portal_With_Username_And_Password(java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="855750000">0.855</td>
+              <td class="duration" data-value="855750000">0.883</td>
+              <td class="duration" data-value="3423000000">3.423</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.navigate_to_the_Bookload_Page()</td>
+              <td>4</td>
+              <td class="duration" data-value="1343750000">1.343</td>
+              <td class="duration" data-value="1343750000">1.398</td>
+              <td class="duration" data-value="5375000000">5.375</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.runTestForOnBrowser_for_Tractor_Validation(java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="1217000000">1.217</td>
+              <td class="duration" data-value="1217000000">1.267</td>
+              <td class="duration" data-value="4868000000">4.868</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.validate_the_created_Order_Number_for_Bill_Customer_Pay_Driver_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="282500000">0.282</td>
+              <td class="duration" data-value="282500000">0.289</td>
+              <td class="duration" data-value="565000000">0.565</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BCPDTractorValidationStepDef.validate_the_created_Order_Number_for_Pay_Driver_Only_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="694000000">0.694</td>
+              <td class="duration" data-value="694000000">0.748</td>
+              <td class="duration" data-value="1388000000">1.388</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BasicFileMaintenanceStepDef.Click_Select_of_first_column()</td>
+              <td>1</td>
+              <td class="duration" data-value="4411000000">4.411</td>
+              <td class="duration" data-value="4411000000">4.411</td>
+              <td class="duration" data-value="4411000000">4.411</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BasicFileMaintenanceStepDef.Close_all_open_Browsers_on_EBH()</td>
+              <td>2</td>
+              <td class="duration" data-value="1957000000">1.957</td>
+              <td class="duration" data-value="1957000000">3.086</td>
+              <td class="duration" data-value="3914000000">3.914</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BasicFileMaintenanceStepDef.Enter_Agent_Location_Code_as_in_Search_In_Box_and_click(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1543000000">1.543</td>
+              <td class="duration" data-value="1543000000">1.543</td>
+              <td class="duration" data-value="1543000000">1.543</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BasicFileMaintenanceStepDef.Login_to_the_Agents_Portal_with_username_and_password_for_EBH_Basic_File_Maintenance(java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="1344500000">1.344</td>
+              <td class="duration" data-value="1344500000">1.633</td>
+              <td class="duration" data-value="2689000000">2.689</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BasicFileMaintenanceStepDef.Navigate_to_the_Account_File_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="4532000000">4.532</td>
+              <td class="duration" data-value="4532000000">4.532</td>
+              <td class="duration" data-value="4532000000">4.532</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BasicFileMaintenanceStepDef.Navigate_to_the_Location_File_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1521000000">1.521</td>
+              <td class="duration" data-value="1521000000">1.521</td>
+              <td class="duration" data-value="1521000000">1.521</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BasicFileMaintenanceStepDef.Validate_Table_Header_and_Name_on_Account_File_Maintenance()</td>
+              <td>1</td>
+              <td class="duration" data-value="10136000000">10.136</td>
+              <td class="duration" data-value="10136000000">10.136</td>
+              <td class="duration" data-value="10136000000">10.136</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BasicFileMaintenanceStepDef.click_on_SH_CON_Verify_SH_CON_is_Checked_on_and_get_the_Records_Returned_for(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="27943000000">27.943</td>
+              <td class="duration" data-value="27943000000">27.943</td>
+              <td class="duration" data-value="27943000000">27.943</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BasicFileMaintenanceStepDef.click_on_Select_and_Validate_Name_Status_and_AAR_Rep()</td>
+              <td>1</td>
+              <td class="duration" data-value="5822000000">5.822</td>
+              <td class="duration" data-value="5822000000">5.822</td>
+              <td class="duration" data-value="5822000000">5.822</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BasicFileMaintenanceStepDef.enter_Part_of_Location_Name_as_and_click(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5078000000">5.078</td>
+              <td class="duration" data-value="5078000000">5.078</td>
+              <td class="duration" data-value="5078000000">5.078</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BasicFileMaintenanceStepDef.navigate_to_the_Corporate_Page_on_Main_Menu_and_to_the_Basic_File_Maintenance_page_for_EBH_Basic_File_Maintenance()</td>
+              <td>2</td>
+              <td class="duration" data-value="1048500000">1.048</td>
+              <td class="duration" data-value="1048500000">1.192</td>
+              <td class="duration" data-value="2097000000">2.097</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BasicFileMaintenanceStepDef.run_Test_for_on_Browser_and_Enter_the_url_for_EBH_Basic_File_Maintenance(java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="3626000000">3.626</td>
+              <td class="duration" data-value="3626000000">5.158</td>
+              <td class="duration" data-value="7252000000">7.252</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BasicFileMaintenanceStepDef.validate_Records_Returned_for_Location_File_Maintenance_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="316000000">0.316</td>
+              <td class="duration" data-value="316000000">0.316</td>
+              <td class="duration" data-value="316000000">0.316</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BasicFileMaintenanceStepDef.validate_Records_Returned_on_Bill_To_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1008000000">1.008</td>
+              <td class="duration" data-value="1008000000">1.008</td>
+              <td class="duration" data-value="1008000000">1.008</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BasicFileMaintenanceStepDef.validate_Records_Returned_on_SH_CON_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1983000000">1.983</td>
+              <td class="duration" data-value="1983000000">1.983</td>
+              <td class="duration" data-value="1983000000">1.983</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BasicFileMaintenanceStepDef.verify_Bill_To_is_Checked_on_and_get_the_Records_Returned_for(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="15133000000">15.133</td>
+              <td class="duration" data-value="15133000000">15.133</td>
+              <td class="duration" data-value="15133000000">15.133</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BillingStepDef.closeAllOpenBrowsers()</td>
+              <td>1</td>
+              <td class="duration" data-value="821000000">0.821</td>
+              <td class="duration" data-value="821000000">0.821</td>
+              <td class="duration" data-value="821000000">0.821</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BillingStepDef.enterBilltoAsFromAsAndToAs(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="15323000000">15.323</td>
+              <td class="duration" data-value="15323000000">15.323</td>
+              <td class="duration" data-value="15323000000">15.323</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BillingStepDef.enter_the_url()</td>
+              <td>1</td>
+              <td class="duration" data-value="2910000000">2.910</td>
+              <td class="duration" data-value="2910000000">2.910</td>
+              <td class="duration" data-value="2910000000">2.910</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BillingStepDef.loginOnTheAgentsPortalWithUsernameAndPassword(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1440000000">1.440</td>
+              <td class="duration" data-value="1440000000">1.440</td>
+              <td class="duration" data-value="1440000000">1.440</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BillingStepDef.navigate_to_the_bookload_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="5394000000">5.394</td>
+              <td class="duration" data-value="5394000000">5.394</td>
+              <td class="duration" data-value="5394000000">5.394</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.BillingStepDef.runTestForOnBrowser(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1211000000">1.211</td>
+              <td class="duration" data-value="1211000000">1.211</td>
+              <td class="duration" data-value="1211000000">1.211</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.Locate_a_Record_from_Database_Agent_Status_must_have_a_Status_of_Agent_Review_or_Corp_Review(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="423000000">0.423</td>
+              <td class="duration" data-value="423000000">0.423</td>
+              <td class="duration" data-value="423000000">0.423</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.Locate_a_Record_from_Database_for_Agent_Deduction_Process_Agent_Status_must_have_a_Status_of_Agent_Review(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="486000000">0.486</td>
+              <td class="duration" data-value="486000000">0.486</td>
+              <td class="duration" data-value="486000000">0.486</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.Verify_Data_on_Orders_Table_enter_ORIGINAL_PRO_and_NEW_PRO_and_Retrieve_records_from_Database_SQL_Four(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="340000000">0.340</td>
+              <td class="duration" data-value="340000000">0.340</td>
+              <td class="duration" data-value="340000000">0.340</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.click_on_NO_on_alert()</td>
+              <td>2</td>
+              <td class="duration" data-value="2891500000">2.891</td>
+              <td class="duration" data-value="2891500000">4.818</td>
+              <td class="duration" data-value="5783000000">5.783</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.close_all_open_Browsers_for_Equipment_Console()</td>
+              <td>2</td>
+              <td class="duration" data-value="3068500000">3.068</td>
+              <td class="duration" data-value="3068500000">3.073</td>
+              <td class="duration" data-value="6137000000">6.137</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.conform_Equipment_Console_Main_Form_is_Displayed_and_Agent_Status_and_Corp_Status_remained_the_Same()</td>
+              <td>1</td>
+              <td class="duration" data-value="2052000000">2.052</td>
+              <td class="duration" data-value="2052000000">2.052</td>
+              <td class="duration" data-value="2052000000">2.052</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.conform_Equipment_Console_Main_Form_is_Displayed_and_Agent_Status_and_Corp_Status_remained_the_same()</td>
+              <td>1</td>
+              <td class="duration" data-value="2066000000">2.066</td>
+              <td class="duration" data-value="2066000000">2.066</td>
+              <td class="duration" data-value="2066000000">2.066</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.enter_Amount_OR_Days_Effective_Date_Todays_Date(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="619000000">0.619</td>
+              <td class="duration" data-value="619000000">0.619</td>
+              <td class="duration" data-value="619000000">0.619</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.enter_Amount_OR_No_of_Days_Effective_Date_Todays_Date(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2535000000">2.535</td>
+              <td class="duration" data-value="2535000000">2.535</td>
+              <td class="duration" data-value="2535000000">2.535</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.enter_Invoice_Number_in_Search_Criteria_on_Equipment_Console_Interface_and_Click_Refresh(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5427000000">5.427</td>
+              <td class="duration" data-value="5427000000">5.427</td>
+              <td class="duration" data-value="5427000000">5.427</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.enter_Invoice_Number_in_Search_Criteria_on_Equipment_Console_and_Click_Refresh(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5453000000">5.453</td>
+              <td class="duration" data-value="5453000000">5.453</td>
+              <td class="duration" data-value="5453000000">5.453</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.enter_some_notes_into_the_Notes_Column_and_Select_Go_Select_Yes_Select_OK(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="556000000">0.556</td>
+              <td class="duration" data-value="556000000">0.556</td>
+              <td class="duration" data-value="556000000">0.556</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.enter_something_into_the_Notes_Column_and_Select_Go_Select_Yes_Select_OK(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="3699000000">3.699</td>
+              <td class="duration" data-value="3699000000">3.699</td>
+              <td class="duration" data-value="3699000000">3.699</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.locate_a_Record_to_Identify_INVOICE_for_Bill_Customer_from_Database_SQL_Two(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="899000000">0.899</td>
+              <td class="duration" data-value="899000000">0.899</td>
+              <td class="duration" data-value="899000000">0.899</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.locate_a_Record_to_Verify_TAX_and_ADMIN_BILLING_CODES_have_been_setup_for_Bill_Customer_from_Database_SQL_One(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="281000000">0.281</td>
+              <td class="duration" data-value="281000000">0.281</td>
+              <td class="duration" data-value="281000000">0.281</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.locate_a_Record_to_test_from_Database_Must_have_a_Corp_Status_of_Agent_Review_or_Corp_Review(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="408000000">0.408</td>
+              <td class="duration" data-value="408000000">0.408</td>
+              <td class="duration" data-value="408000000">0.408</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.locate_a_Record_to_test_from_Database_select_a_record_that_has_Corp_Status_Corp_Review(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="386000000">0.386</td>
+              <td class="duration" data-value="386000000">0.386</td>
+              <td class="duration" data-value="386000000">0.386</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.login_to_the_Portal_with_USERNAME_and_PASSWORD_for_Equipment_Console(java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="307000000">0.307</td>
+              <td class="duration" data-value="307000000">0.315</td>
+              <td class="duration" data-value="614000000">0.614</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.run_Test_for_on_Browser_for_Equipment_Console_and_Enter_the_url_for_Equipment_Console(java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="2403500000">2.403</td>
+              <td class="duration" data-value="2403500000">2.944</td>
+              <td class="duration" data-value="4807000000">4.807</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.select_Agent_Deduct()</td>
+              <td>1</td>
+              <td class="duration" data-value="4343000000">4.343</td>
+              <td class="duration" data-value="4343000000">4.343</td>
+              <td class="duration" data-value="4343000000">4.343</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.select_Agent_Reimbursement()</td>
+              <td>1</td>
+              <td class="duration" data-value="4298000000">4.298</td>
+              <td class="duration" data-value="4298000000">4.298</td>
+              <td class="duration" data-value="4298000000">4.298</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.select_X_to_Close_Agent_Deduction_Form()</td>
+              <td>1</td>
+              <td class="duration" data-value="64000000">0.064</td>
+              <td class="duration" data-value="64000000">0.064</td>
+              <td class="duration" data-value="64000000">0.064</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.select_X_to_Close_Agent_Reimbursement_Form()</td>
+              <td>1</td>
+              <td class="duration" data-value="59000000">0.059</td>
+              <td class="duration" data-value="59000000">0.059</td>
+              <td class="duration" data-value="59000000">0.059</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.select_a_record_that_has_a_Corp_Status_Corp_Review_or_Agent_Review(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="5342000000">5.342</td>
+              <td class="duration" data-value="5342000000">5.348</td>
+              <td class="duration" data-value="10684000000">10.684</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.verify_Data_on_Order_Action_History_Table_enter_ORDER_ID_from_NEW_PRO_NUMBER_and_Retrieve_Records_from_Database_SQL_Nine(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="275000000">0.275</td>
+              <td class="duration" data-value="275000000">0.275</td>
+              <td class="duration" data-value="275000000">0.275</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.verify_Data_on_Order_Billing_Com_Table_enter_ORDER_ID_from_NEW_PRO_NUMBER_then_Retrieve_records_from_Database_SQL_Eleven(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="291000000">0.291</td>
+              <td class="duration" data-value="291000000">0.291</td>
+              <td class="duration" data-value="291000000">0.291</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.verify_Data_on_Order_Billing_Table_enter_ORDER_ID_from_NEW_PRO_NUMBER_and_Retrieve_records_from_Database_SQL_Five(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="290000000">0.290</td>
+              <td class="duration" data-value="290000000">0.290</td>
+              <td class="duration" data-value="290000000">0.290</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.verify_Data_on_Order_Misc_Table_enter_ORDER_ID_from_ORIGINAL_PRO_NUMBER_and_NEW_PRO_NUMBER_and_then_Retrieve_records_from_Database_SQL_Eight(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="294000000">0.294</td>
+              <td class="duration" data-value="294000000">0.294</td>
+              <td class="duration" data-value="294000000">0.294</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.verify_Data_on_Order_Notes_Table_enter_ORDER_ID_from_NEW_PRO_NUMBER_and_then_Retrieve_records_from_Database_SQL_Ten(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="273000000">0.273</td>
+              <td class="duration" data-value="273000000">0.273</td>
+              <td class="duration" data-value="273000000">0.273</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.verify_Data_on_Order_Ops_Table_enter_ORDER_ID_from_ORIGINAL_PRO_NUMBER_and_NEW_PRO_NUMBER_then_Retrieve_records_from_Database_SQL_Seven(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="322000000">0.322</td>
+              <td class="duration" data-value="322000000">0.322</td>
+              <td class="duration" data-value="322000000">0.322</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.verify_Data_on_Order_Refs_Table_enter_ORDER_ID_from_ORIGINAL_PRO_NUMBER_and_NEW_PRO_NUMBER_and_Retrieve_records_from_Database_SQL_Six(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="293000000">0.293</td>
+              <td class="duration" data-value="293000000">0.293</td>
+              <td class="duration" data-value="293000000">0.293</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.verify_Notes_Column_has_the_Customer_No_Chassis_No_and_Container_No_Prefilled_in_the_Notes_Column()</td>
+              <td>1</td>
+              <td class="duration" data-value="8262000000">8.262</td>
+              <td class="duration" data-value="8262000000">8.262</td>
+              <td class="duration" data-value="8262000000">8.262</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.verify_Notes_Column_has_the_Customer_Number_Chassis_No_and_Container_No_Prefilled_in_the_notes_column()</td>
+              <td>1</td>
+              <td class="duration" data-value="8258000000">8.258</td>
+              <td class="duration" data-value="8258000000">8.258</td>
+              <td class="duration" data-value="8258000000">8.258</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.verify_Order_Pro_is_created_in_Chassis_Bill_Customer_Record_and_Retrieve_the_NEW_ORDER_PRO_from_Database_SQL_Three(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="310000000">0.310</td>
+              <td class="duration" data-value="310000000">0.310</td>
+              <td class="duration" data-value="310000000">0.310</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.verify_Record_was_added_to_Agent_Stl_Trans_Table_enter_NEW_PRO_NUMBER_and_Retrieve_records_from_Database_SQL_Twelve(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="281000000">0.281</td>
+              <td class="duration" data-value="281000000">0.281</td>
+              <td class="duration" data-value="281000000">0.281</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.verify_Record_was_added_to_the_Agent_Settlements_Table_and_Verify_Calculations_are_correct_Enter_NEW_PRO_NUMBER_then_Retrieve_records_from_Database_SQL_Thirteen(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="293000000">0.293</td>
+              <td class="duration" data-value="293000000">0.293</td>
+              <td class="duration" data-value="293000000">0.293</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleTractorAdjustmentsStepDef.click_no_on_alert()</td>
+              <td>1</td>
+              <td class="duration" data-value="513000000">0.513</td>
+              <td class="duration" data-value="513000000">0.513</td>
+              <td class="duration" data-value="513000000">0.513</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleTractorAdjustmentsStepDef.close_all_open_Browsers_on_Equipment_Console()</td>
+              <td>1</td>
+              <td class="duration" data-value="3154000000">3.154</td>
+              <td class="duration" data-value="3154000000">3.154</td>
+              <td class="duration" data-value="3154000000">3.154</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleTractorAdjustmentsStepDef.enter_invoice_number_in_search_criteria_on_equipment_console_interface_for_tractor(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5750000000">5.750</td>
+              <td class="duration" data-value="5750000000">5.750</td>
+              <td class="duration" data-value="5750000000">5.750</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleTractorAdjustmentsStepDef.login_to_the_portal_with_username_and_password_for_tractor(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="5089000000">5.089</td>
+              <td class="duration" data-value="5089000000">5.089</td>
+              <td class="duration" data-value="5089000000">5.089</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleTractorAdjustmentsStepDef.run_test_for_on_browser_and_enter_the_url_for_tractor(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="11529000000">11.529</td>
+              <td class="duration" data-value="11529000000">11.529</td>
+              <td class="duration" data-value="11529000000">11.529</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleTractorAdjustmentsStepDef.select_agent_and_pro_no_for_tractor(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="6548000000">6.548</td>
+              <td class="duration" data-value="6548000000">6.548</td>
+              <td class="duration" data-value="6548000000">6.548</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleTractorAdjustmentsStepDef.select_agent_status_button_for_a_record_that_has_a_agent_status_agent_review_or_corp_review_for_tractor(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="398000000">0.398</td>
+              <td class="duration" data-value="398000000">0.398</td>
+              <td class="duration" data-value="398000000">0.398</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.EquipmentConsoleTractorAdjustmentsStepDef.select_driver_reimbursement_on_status(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="4387000000">4.387</td>
+              <td class="duration" data-value="4387000000">4.387</td>
+              <td class="duration" data-value="4387000000">4.387</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.Close_all_open_Browsers_on_EBH_for_Tractors()</td>
+              <td>13</td>
+              <td class="duration" data-value="1374846153">1.374</td>
+              <td class="duration" data-value="1374846153">3.125</td>
+              <td class="duration" data-value="17873000000">17.873</td>
+              <td class="failed">76.92%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.Login_to_the_EBH_with_username_and_password_for_EBH_Tractors(java.lang.String,java.lang.String)</td>
+              <td>13</td>
+              <td class="duration" data-value="1366384615">1.366</td>
+              <td class="duration" data-value="1366384615">3.100</td>
+              <td class="duration" data-value="17763000000">17.763</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.Navigate_to_Tractor_Vendor_Relationship()</td>
+              <td>3</td>
+              <td class="duration" data-value="19051000000">19.051</td>
+              <td class="duration" data-value="19051000000">19.310</td>
+              <td class="duration" data-value="57153000000">57.153</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.click_Cancel_on_Add_Fuel_Purchase()</td>
+              <td>1</td>
+              <td class="duration" data-value="82000000">0.082</td>
+              <td class="duration" data-value="82000000">0.082</td>
+              <td class="duration" data-value="82000000">0.082</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.click_Save_on_Add_Fuel_Purchase()</td>
+              <td>1</td>
+              <td class="duration" data-value="4383000000">4.383</td>
+              <td class="duration" data-value="4383000000">4.383</td>
+              <td class="duration" data-value="4383000000">4.383</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.click_Save_on_Edit_Fuel_Purchase()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.click_on_Edit_and_edit_the_fields(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.click_on_Report_Button_and_Click_on_Search_Results()</td>
+              <td>2</td>
+              <td class="duration" data-value="593000000">0.593</td>
+              <td class="duration" data-value="593000000">0.743</td>
+              <td class="duration" data-value="1186000000">1.186</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.click_on_report_button_and_on_search_results()</td>
+              <td>3</td>
+              <td class="duration" data-value="960666666">0.960</td>
+              <td class="duration" data-value="960666666">1.259</td>
+              <td class="duration" data-value="2882000000">2.882</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.click_on_view()</td>
+              <td>3</td>
+              <td class="duration" data-value="9048333333">9.048</td>
+              <td class="duration" data-value="9048333333">9.117</td>
+              <td class="duration" data-value="27145000000">27.145</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.enter_Tractor_Id_Earliest_Date_Latest_Date_State_Company_IFTA(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="16974000000">16.974</td>
+              <td class="duration" data-value="16974000000">16.974</td>
+              <td class="duration" data-value="16974000000">16.974</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.enter_Tractor_Id_Earliest_Date_Latest_Date_State_Company_IFTA(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="19100500000">19.100</td>
+              <td class="duration" data-value="19100500000">19.186</td>
+              <td class="duration" data-value="38201000000">38.201</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.enter_Tractor_Id_Earliest_Date_Latest_Date_State_Company_IFTA(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="21211000000">21.211</td>
+              <td class="duration" data-value="21211000000">21.230</td>
+              <td class="duration" data-value="42422000000">42.422</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.enter_Tractor_Id_Earliest_Date_State_Company_IFTA(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="19113000000">19.113</td>
+              <td class="duration" data-value="19113000000">19.113</td>
+              <td class="duration" data-value="19113000000">19.113</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.enter_Tractor_Id_Latest_Date_State_Company(java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="16925000000">16.925</td>
+              <td class="duration" data-value="16925000000">16.925</td>
+              <td class="duration" data-value="16925000000">16.925</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.enter_Tractor_Id_Latest_Date_State_Company_IFTA(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="19996000000">19.996</td>
+              <td class="duration" data-value="19996000000">19.996</td>
+              <td class="duration" data-value="19996000000">19.996</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.enter_unit_number_and_click_on_search(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="5936000000">5.936</td>
+              <td class="duration" data-value="5936000000">7.695</td>
+              <td class="duration" data-value="17808000000">17.808</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.get_SEARCH_RESULTS_Excel_Report_from_Downloads_for_EBH_Tractors()</td>
+              <td>3</td>
+              <td class="duration" data-value="14718333333">14.718</td>
+              <td class="duration" data-value="14718333333">16.446</td>
+              <td class="duration" data-value="44155000000">44.155</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.get_SEARCH_RESULTS_Excel_Report_from_Downloads_for_FPM()</td>
+              <td>2</td>
+              <td class="duration" data-value="8998500000">8.998</td>
+              <td class="duration" data-value="8998500000">9.335</td>
+              <td class="duration" data-value="17997000000">17.997</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.navigate_to_Fuel_Purchase_Maintenance_Page()</td>
+              <td>10</td>
+              <td class="duration" data-value="2501500000">2.501</td>
+              <td class="duration" data-value="2501500000">3.709</td>
+              <td class="duration" data-value="25015000000">25.015</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.navigate_to_the_Corporate_Page_on_Main_Menu_then_to_the_Fuel_and_Mileage_page_for_EBH_Tractors()</td>
+              <td>10</td>
+              <td class="duration" data-value="1175300000">1.175</td>
+              <td class="duration" data-value="1175300000">2.654</td>
+              <td class="duration" data-value="11753000000">11.753</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.navigate_to_the_Corporate_Page_on_Main_Menu_then_to_the_Settlements_page_for_EBH_Tractors()</td>
+              <td>3</td>
+              <td class="duration" data-value="1114666666">1.114</td>
+              <td class="duration" data-value="1114666666">1.266</td>
+              <td class="duration" data-value="3344000000">3.344</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.re_Enter_required_fields(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="10808000000">10.808</td>
+              <td class="duration" data-value="10808000000">10.808</td>
+              <td class="duration" data-value="10808000000">10.808</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.run_Test_for_Environment_on_Browser_for_EBH_Tractors_and_Enter_the_url(java.lang.String,java.lang.String)</td>
+              <td>13</td>
+              <td class="duration" data-value="2557923076">2.557</td>
+              <td class="duration" data-value="2557923076">4.223</td>
+              <td class="duration" data-value="33253000000">33.253</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.select_from_dropdown(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="17061500000">17.061</td>
+              <td class="duration" data-value="17061500000">17.093</td>
+              <td class="duration" data-value="34123000000">34.123</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.select_the_New_Button_Enter_required_fields(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="11819000000">11.819</td>
+              <td class="duration" data-value="11819000000">11.819</td>
+              <td class="duration" data-value="11819000000">11.819</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.validate_SEARCH_RESULTS_Excel_Report_with_Database_Record(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1333000000">1.333</td>
+              <td class="duration" data-value="1333000000">1.333</td>
+              <td class="duration" data-value="1333000000">1.333</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.validate_SEARCH_RESULTS_Excel_Report_with_Database_Record_for_IFTA(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="820000000">0.820</td>
+              <td class="duration" data-value="820000000">0.820</td>
+              <td class="duration" data-value="820000000">0.820</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.validate_the_Newly_Edited_Record_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.validate_the_Records_Returned_with_Database_Record_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.validate_the_excel_search_result_report_with_database_records(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="5229666666">5.229</td>
+              <td class="duration" data-value="5229666666">5.621</td>
+              <td class="duration" data-value="15689000000">15.689</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.validate_the_total_records_returned_with_database_records(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="6391666666">6.391</td>
+              <td class="duration" data-value="6391666666">7.325</td>
+              <td class="duration" data-value="19175000000">19.175</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.verify_The_Total_Records_Returned_with_Database_Record_Earliest_Date_for_IFTA(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1159000000">1.159</td>
+              <td class="duration" data-value="1159000000">1.159</td>
+              <td class="duration" data-value="1159000000">1.159</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.verify_The_Total_Records_Returned_with_Database_Record_Latest_Date_for_IFTA(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2431000000">2.431</td>
+              <td class="duration" data-value="2431000000">2.431</td>
+              <td class="duration" data-value="2431000000">2.431</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.verify_The_Total_Records_Returned_with_Database_Record_for_IFTA(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="961000000">0.961</td>
+              <td class="duration" data-value="961000000">0.961</td>
+              <td class="duration" data-value="961000000">0.961</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.verify_the_Total_Records_Returned_with_Database_Record_Earliest_Date_for_TractorID(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="3536000000">3.536</td>
+              <td class="duration" data-value="3536000000">3.536</td>
+              <td class="duration" data-value="3536000000">3.536</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.verify_the_Total_Records_Returned_with_Database_Record_Latest_Date_for_TractorID(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="4333000000">4.333</td>
+              <td class="duration" data-value="4333000000">4.333</td>
+              <td class="duration" data-value="4333000000">4.333</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinitions.TractorStepDef.verify_the_Total_Records_Returned_with_Database_Record_for_TractorID(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1667000000">1.667</td>
+              <td class="duration" data-value="1667000000">1.667</td>
+              <td class="duration" data-value="1667000000">1.667</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>324</td>
+            <td>647</td>
+            <td class="duration">5.502</td>
+            <td class="duration">9:21.572</td>
+            <td class="duration">59:20.015</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

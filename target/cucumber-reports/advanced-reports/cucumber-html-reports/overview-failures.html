@@ -1,0 +1,3179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Failures Overview</title>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation"  class="active" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>AP-RegressionsmritiBranch1</td>
+              <td>1</td>
+            <td>09 Sep 2022, 08:55</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Failures Overview</h2>
+          <p>The following summary displays scenarios that failed.</p>
+      </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+              <div class="elements">
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-featureFiles-AgentSettlementAdjustments-feature.html">Agent Settlement Adjustments Process Feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Regression.html">@Regression</a>
+           <a href="report-tag_ScenarioActiveCompleteActive.html">@ScenarioActiveCompleteActive</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1:2.592</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate on EDIT - ACTIVE to COMPLETE and back to ACTIVE on Agent Settlement Adjustments in Launch Environment (SET_2255)</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Run Test for &quot;ebhlaunch&quot; on Browser &quot;chrome&quot; for EBH Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">1.706</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter the url for EBH Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">1.093</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Login to the Agents Portal with username &quot;SMRITIDHUNGANA&quot; and password &quot;Legendary@1&quot; for EBH Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">1.536</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to the Corporate Page on Main Menu for Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">0.664</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to the Settlements page for Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">0.700</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">2.965</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter Vendor Code &quot;10000&quot; and Click</span>
+  
+  <span class="lead-duration duration">1.605</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Get the Records Returned on Agent Settlement Adjustments Table</span>
+  
+  <span class="lead-duration duration">21.126</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Select the First Edit Button on Action Column</span>
+  
+  <span class="lead-duration duration">0.332</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Change ACTIVE status to COMPLETE, Select NO Button, Confirm Status remains as ACTIVE &quot;COMPLETE&quot;</span>
+  
+  <span class="lead-duration duration">24.712</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">Validate the Records Returned with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and &quot;10000&quot; &quot;AA&quot;</span>
+  
+  <span class="lead-duration duration">6.150</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>java.lang.AssertionError: Assertion Failed!!</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: Assertion Failed!!
+	at org.junit.Assert.fail(Assert.java:89)
+	at stepDefinitions.AgentSettlementAdjustmentsStepDef.validate_the_Records_Returned_with_Database_Record_and(AgentSettlementAdjustmentsStepDef.java:987)
+	at &#10045;.Validate the Records Returned with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and &quot;10000&quot; &quot;AA&quot;(file:///C:/Users/Smriti%20Dhugana/Documents/AP-RegressionsmritiBranch1/src/test/resources/featureFiles/AgentSettlementAdjustments.feature:76)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Select the First Edit Button on Action Column</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Change ACTIVE status to COMPLETE, Select YES Button, Confirm Status changes to COMPLETE &quot;COMPLETE&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Validate the Records Returned, WHEN ACTIVE TO COMPLETE with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and &quot;10000&quot; &quot;AA&quot;</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Select the First Edit Button on Action Column</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Change COMPLETE status to ACTIVE, Select YES Button, Confirm ACTIVE Status was accepted &quot;ACTIVE&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Validate the Records Returned with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and &quot;10000&quot; &quot;AA&quot;</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Close all open Browsers on EBH for Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-featureFiles-AgentSettlementAdjustments-feature.html">Agent Settlement Adjustments Process Feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Regression.html">@Regression</a>
+           <a href="report-tag_ScenarioOnEditMaxLimitandTotaltoDate.html">@ScenarioOnEditMaxLimitandTotaltoDate</a>
+      </div>
+
+  
+  <span class="lead-duration duration">47.477</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate on edit - MAX LIMIT and TOTAL TO DATE on Agent Settlement Adjustments Detail in Launch Environment (SET_2255)</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Run Test for &quot;ebhlaunch&quot; on Browser &quot;chrome&quot; for EBH Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">1.536</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter the url for EBH Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">0.857</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Login to the Agents Portal with username &quot;SMRITIDHUNGANA&quot; and password &quot;Legendary@1&quot; for EBH Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">1.460</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to the Corporate Page on Main Menu for Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">0.670</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to the Settlements page for Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">0.591</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">3.350</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter Vendor Code &quot;10000&quot; and Click</span>
+  
+  <span class="lead-duration duration">1.681</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Select the New Button, Enter the required fields &quot;AD&quot; &quot;ACTIVE&quot; &quot;W&quot; &quot;7.00&quot; &quot;BAL&quot;</span>
+  
+  <span class="lead-duration duration">19.314</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter an End Date that is after the Start Date and not in the past &quot;09/02/2022&quot; &quot;12/28/2022&quot;</span>
+  
+  <span class="lead-duration duration">4.722</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter the Max Limit to a value Less Than current Total to Date, Select the Save button &quot;1.50&quot; &quot;2.50&quot;</span>
+  
+  <span class="lead-duration duration">11.235</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">Change the Max Limit to a value = Current Total to Date, Select the Save button &quot;3.50&quot;</span>
+  
+  <span class="lead-duration duration">2.060</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLInputElement] has no size and location</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLInputElement] has no size and location
+  (Session info: chrome=105.0.5195.102)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'SCH-ITLT-50', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\SMRITI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61661}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 519f90b02aebfbdff4a3676e56ed6017
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:594)
+	at stepDefinitions.AgentSettlementAdjustmentsStepDef.change_the_Max_Limit_to_a_value_Current_Total_to_Date_Select_the_Save_button(AgentSettlementAdjustmentsStepDef.java:1577)
+	at &#10045;.Change the Max Limit to a value = Current Total to Date, Select the Save button &quot;3.50&quot;(file:///C:/Users/Smriti%20Dhugana/Documents/AP-RegressionsmritiBranch1/src/test/resources/featureFiles/AgentSettlementAdjustments.feature:127)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Validate the Records Returned when Max Limit is EQUALS TO with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and &quot;10000&quot; &quot;AD&quot; &quot;BAL&quot; &quot;W&quot; &quot;7.00&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Select the First Edit Button on Action Column on Include Complete again</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Change the Max Limit to a Value Greater Than &gt; current Total to Date, Select the Save button &quot;4.50&quot;</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Validate the Records Returned when Max Limit is GREATER THAN with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and &quot;10000&quot; &quot;AD&quot; &quot;BAL&quot; &quot;W&quot; &quot;7.00&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Close all open Browsers on EBH for Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-featureFiles-AgentSettlementAdjustments-feature.html">Agent Settlement Adjustments Process Feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Regression.html">@Regression</a>
+           <a href="report-tag_ScenarioAdvancedSearchAgentCode.html">@ScenarioAdvancedSearchAgentCode</a>
+      </div>
+
+  
+  <span class="lead-duration duration">2:45.574</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate on ADVANDED SEARCH - AGENT CODE, PAY CODE, ORDER NUMBER in Agent Settlement Adjustments in Launch Environment</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Run Test for &quot;ebhlaunch&quot; on Browser &quot;chrome&quot; for EBH Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">1.249</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter the url for EBH Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">0.713</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Login to the Agents Portal with username &quot;SMRITIDHUNGANA&quot; and password &quot;Legendary@1&quot; for EBH Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">1.433</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to the Corporate Page on Main Menu for Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">0.611</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to the Settlements page for Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">0.369</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">2.849</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Select the Advanced Search button</span>
+  
+  <span class="lead-duration duration">8.307</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter Agent Code &quot;YNN&quot; and Click on Search Button</span>
+  
+  <span class="lead-duration duration">2:30.039</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
+          <a>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;AgentCodePartial_I&quot;]&quot;}</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;AgentCodePartial_I&quot;]&quot;}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'SCH-ITLT-50', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\SMRITI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c5e0fcdc514bcf288643459e09056465
+*** Element info: {Using=xpath, value=//*[@id=&quot;AgentCodePartial_I&quot;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at stepDefinitions.AgentSettlementAdjustmentsStepDef.enter_Agent_Code_and_Click_on_Search_Button(AgentSettlementAdjustmentsStepDef.java:3379)
+	at &#10045;.Enter Agent Code &quot;YNN&quot; and Click on Search Button(file:///C:/Users/Smriti%20Dhugana/Documents/AP-RegressionsmritiBranch1/src/test/resources/featureFiles/AgentSettlementAdjustments.feature:182)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get Records when INCLUDE COMPLETE is SELECTED, Validate the Records Returned with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and Agent Code &quot;YNN&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get Records when RECURRING ONLY is SELECTED, Validate the Records Returned with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and Agent Code &quot;YNN&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get Records when INCLUDE COMPLETE and RECURRING ONLY both are SELECTED, Validate the Records Returned with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and Agent Code &quot;YNN&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get Records when INCLUDE COMPLETE and RECURRING ONLY both are DE-SELECTED, Validate the Records Returned with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and Agent Code &quot;YNN&quot;</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter Agent Code, enter Pay Code &quot;DM - PER DIEM/M &amp; R DEDUCTIONS&quot; and Click on Search Button</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get Records when INCLUDE COMPLETE is SELECTED, Validate the Records Returned with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and Agent Code &quot;YNN&quot; &quot;DM&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get Records when RECURRING ONLY is SELECTED, Validate Records Returned for Advanced Search with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and Agent Code &quot;YNN&quot; &quot;DM&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get Records when INCLUDE COMPLETE and RECURRING ONLY both are SELECTED, Validate the Records Returned for Advanced Search with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and Agent Code &quot;YNN&quot; &quot;DM&quot;</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get Records when INCLUDE COMPLETE and RECURRING ONLY both are DE-SELECTED, Validate the Records Returned with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and Agent Code &quot;YNN&quot; &quot;DM&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter Agent Code, Pay Code and Order Number &quot;YNN123456&quot; and Click on Search Button</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get Records when INCLUDE COMPLETE is SELECTED, Validate the Records Returned with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and Agent Code &quot;YNN&quot; &quot;DM&quot; &quot;YNN123456&quot;</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get Records when RECURRING ONLY is SELECTED, Validate the Records Returned for Advanced Search with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and Agent Code &quot;YNN&quot; &quot;DM&quot; &quot;YNN123456&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get Records when INCLUDE COMPLETE and RECURRING ONLY both are SELECTED, Validate the Records Returned for Advanced Search with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and Agent Code &quot;YNN&quot; &quot;DM&quot; &quot;YNN123456&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Get Records when INCLUDE COMPLETE and RECURRING ONLY both are DE-SELECTED, Validate the Records Returned with Database Record &quot;ebhlaunch&quot; &quot;[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]&quot; and Agent Code &quot;YNN&quot; &quot;DM&quot; &quot;YNN123456&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Close all open Browsers on EBH for Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-featureFiles-AgentSettlementAdjustments-feature.html">Agent Settlement Adjustments Process Feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Regression.html">@Regression</a>
+           <a href="report-tag_ScenarioViewButton.html">@ScenarioViewButton</a>
+      </div>
+
+  
+  <span class="lead-duration duration">30.422</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-10">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate records on VIEW - on Agent Settlement Adjustments in Launch Environment (SET_2283)</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-11">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Run Test for &quot;ebhlaunch&quot; on Browser &quot;chrome&quot; for EBH Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">1.258</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter the url for EBH Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">0.793</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Login to the Agents Portal with username &quot;SMRITIDHUNGANA&quot; and password &quot;Legendary@1&quot; for EBH Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">1.024</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to the Corporate Page on Main Menu for Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">0.443</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to the Settlements page for Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">0.340</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">2.667</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Select the Advanced Search button</span>
+  
+  <span class="lead-duration duration">8.159</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter Vendor Code &quot;10000&quot; and Click on Search Button</span>
+  
+  <span class="lead-duration duration">10.317</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Select the First View Button on Action Column</span>
+  
+  <span class="lead-duration duration">0.352</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">Confirm the company code, vendor code, all locations and vendor name are displayed in header in blue font &quot;10000 (EVA) - BAL,HMT,PBJ,WCC,WCL,YLS - JMT LOGISTICS&quot;</span>
+  
+  <span class="lead-duration duration">5.068</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
+          <a>org.junit.ComparisonFailure: Both Actual and Expected are Same!! expected:&lt;10000 [(EVA) - BAL,HMT,PBJ,WCC,WCL,YLS - JMT LOGISTICS]&gt; but was:&lt;10000 [- JMT LOGISTICS (EVA)]&gt;</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details  in ">
+        <pre>org.junit.ComparisonFailure: Both Actual and Expected are Same!! expected:&lt;10000 [(EVA) - BAL,HMT,PBJ,WCC,WCL,YLS - JMT LOGISTICS]&gt; but was:&lt;10000 [- JMT LOGISTICS (EVA)]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at stepDefinitions.AgentSettlementAdjustmentsStepDef.confirm_the_company_code_vendor_code_all_locations_and_vendor_name_are_displayed_in_header_in_blue_font(AgentSettlementAdjustmentsStepDef.java:4804)
+	at &#10045;.Confirm the company code, vendor code, all locations and vendor name are displayed in header in blue font &quot;10000 (EVA) - BAL,HMT,PBJ,WCC,WCL,YLS - JMT LOGISTICS&quot;(file:///C:/Users/Smriti%20Dhugana/Documents/AP-RegressionsmritiBranch1/src/test/resources/featureFiles/AgentSettlementAdjustments.feature:216)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Select the 'X' on form</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Close all open Browsers on EBH for Agent Settlement Adjustments</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-featureFiles-AgentSettling-feature.html">Agent Settling Transaction Process Feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Regression.html">@Regression</a>
+           <a href="report-tag_OWTBFContinue.html">@OWTBFContinue</a>
+      </div>
+
+  
+  <span class="lead-duration duration">26.996</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Finalize OWTBF (continue) on Agent Settling Page in Launch Environment</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Run Test for &quot;ebhlaunch&quot; on Browser &quot;chrome&quot; and Enter the url for EBH</span>
+  
+  <span class="lead-duration duration">1.930</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Login to the Agents Portal with username &quot;SMRITIDHUNGANA&quot; and password &quot;Legendary@1&quot;</span>
+  
+  <span class="lead-duration duration">1.098</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to the Corporate Page on Main Menu and to the Settlements page</span>
+  
+  <span class="lead-duration duration">0.773</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to the Agent Settling page</span>
+  
+  <span class="lead-duration duration">0.075</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Pop Up Menu arises insert password &quot;settle&quot;</span>
+  
+  <span class="lead-duration duration">0.056</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on Ok</span>
+  
+  <span class="lead-duration duration">0.108</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Conformation pop up menu arises Reset or Continue, click Continue</span>
+  
+  <span class="lead-duration duration">8.134</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Verify you are on Agent Settling Page</span>
+  
+  <span class="lead-duration duration">5.067</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click Filter Icon on Orders Waiting To Be Finalized</span>
+  
+  <span class="lead-duration duration">0.064</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click NO on drop down item list and validate the color of OWTBF at the left end of the page</span>
+  
+  <span class="lead-duration duration">4.465</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click YES on drop down item list for OWTBF as &quot;YES&quot; and validate the color of OWTBF at the left end of the page</span>
+  
+  <span class="lead-duration duration">2.380</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click Orders Waiting To Be Finalized Button at the left end of the page</span>
+  
+  <span class="lead-duration duration">0.613</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">Verify Agent/Location Code and Record Returned on Orders Waiting To Be Finalized Page for &quot;PSS&quot;</span>
+  
+  <span class="lead-duration duration">2.233</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
+          <a>java.lang.AssertionError: Agent Code is not present!!</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: Agent Code is not present!!
+	at org.junit.Assert.fail(Assert.java:89)
+	at stepDefinitions.AgentSettlingStepDef.Verify_Agent_Location_Code_and_Record_Returned_on_Orders_Waiting_To_Be_Finalized_Page_for(AgentSettlingStepDef.java:234)
+	at &#10045;.Verify Agent/Location Code and Record Returned on Orders Waiting To Be Finalized Page for &quot;PSS&quot;(file:///C:/Users/Smriti%20Dhugana/Documents/AP-RegressionsmritiBranch1/src/test/resources/featureFiles/AgentSettling.feature:19)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Validate Records Returned with Database Record &quot;ebhlaunch&quot; and &quot;[EBHLaunch].[dbo].[usp_GetOrdersWaitingToBeFinalized]&quot; for &quot;PSS&quot; &quot;9859&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click Finalize on Orders Waiting To Be Finalized Page and Close</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Close all open Browsers</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-featureFiles-FuelPurchaseMaintenance-feature.html">Fuel Purchase Maintenance Validation Feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Regression.html">@Regression</a>
+           <a href="report-tag_FPMValidationIFTALatestDate.html">@FPMValidationIFTALatestDate</a>
+           <a href="report-tag_q.html">@q</a>
+      </div>
+
+  
+  <span class="lead-duration duration">28.767</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-16">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">(FANDM-77) Validation of Fuel Purchase Maintenance when Tractor Id, Latest Date, State, Company and IFTA is selected</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Run Test for Environment &quot;ebhstaging&quot; on Browser &quot;chrome&quot; for EBH Tractors and Enter the url</span>
+  
+  <span class="lead-duration duration">2.270</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Login to the EBH with username &quot;SmritiTest&quot; and password &quot;Legendary@1&quot; for EBH Tractors</span>
+  
+  <span class="lead-duration duration">1.012</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to the Corporate Page on Main Menu then to the Fuel and Mileage page for EBH Tractors</span>
+  
+  <span class="lead-duration duration">0.932</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to Fuel Purchase Maintenance Page</span>
+  
+  <span class="lead-duration duration">2.126</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter Tractor Id &quot;55922&quot; Latest Date &quot;08/17/2022&quot; State &quot;NJ&quot; Company &quot;EVA&quot; IFTA &quot;OO&quot;</span>
+  
+  <span class="lead-duration duration">19.996</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">Verify The Total Records Returned with Database Record &quot;ebhstaging&quot; &quot;[EBH].[dbo].[FUEL_PUR]&quot; Latest Date &quot;2022-08-17&quot; &quot;NJ&quot; &quot;EVA&quot; &quot;OO&quot; for IFTA</span>
+  
+  <span class="lead-duration duration">2.431</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
+          <a>java.lang.AssertionError: Assertion Failed!!</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: Assertion Failed!!
+	at org.junit.Assert.fail(Assert.java:89)
+	at stepDefinitions.TractorStepDef.verify_The_Total_Records_Returned_with_Database_Record_Latest_Date_for_IFTA(TractorStepDef.java:1084)
+	at &#10045;.Verify The Total Records Returned with Database Record &quot;ebhstaging&quot; &quot;[EBH].[dbo].[FUEL_PUR]&quot; Latest Date &quot;2022-08-17&quot; &quot;NJ&quot; &quot;EVA&quot; &quot;OO&quot; for IFTA(file:///C:/Users/Smriti%20Dhugana/Documents/AP-RegressionsmritiBranch1/src/test/resources/featureFiles/FuelPurchaseMaintenance.feature:96)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Close all open Browsers on EBH for Tractors</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-featureFiles-FuelPurchaseMaintenance-feature.html">Fuel Purchase Maintenance Validation Feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Regression.html">@Regression</a>
+           <a href="report-tag_FPMScenarioNew.html">@FPMScenarioNew</a>
+           <a href="report-tag_q.html">@q</a>
+      </div>
+
+  
+  <span class="lead-duration duration">57.808</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">(FANDM-77) Validation of NEW on Fuel Purchase Maintenance Page</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-20">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Run Test for Environment &quot;ebhstaging&quot; on Browser &quot;chrome&quot; for EBH Tractors and Enter the url</span>
+  
+  <span class="lead-duration duration">4.223</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Login to the EBH with username &quot;SmritiTest&quot; and password &quot;Legendary@1&quot; for EBH Tractors</span>
+  
+  <span class="lead-duration duration">3.100</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to the Corporate Page on Main Menu then to the Fuel and Mileage page for EBH Tractors</span>
+  
+  <span class="lead-duration duration">2.654</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to Fuel Purchase Maintenance Page</span>
+  
+  <span class="lead-duration duration">3.709</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Select the New Button, Enter required fields &quot;EVA&quot; &quot;11084&quot; &quot;08/22/2022&quot; &quot;HCI&quot; &quot;AK&quot; &quot;10&quot; &quot;3.2&quot;</span>
+  
+  <span class="lead-duration duration">11.819</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click Cancel on Add Fuel Purchase</span>
+  
+  <span class="lead-duration duration">0.082</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Re-Enter required fields &quot;EVA&quot; &quot;11084&quot; &quot;08/22/2022&quot; &quot;HCI&quot; &quot;AK&quot; &quot;10&quot; &quot;3.2&quot;</span>
+  
+  <span class="lead-duration duration">10.808</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click Save on Add Fuel Purchase</span>
+  
+  <span class="lead-duration duration">4.383</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">Select &quot;EVA&quot; &quot;11084&quot; &quot;08/22/2022&quot; &quot;HCI&quot; &quot;AK&quot; &quot;10&quot; &quot;3.2&quot; from dropdown</span>
+  
+  <span class="lead-duration duration">17.030</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-21">
+          <a>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;img1&quot;]&quot;}</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;img1&quot;]&quot;}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'SCH-ITLT-50', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\SMRITI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64866}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4719a9bf927a9a34e6a7c5c5b4d4b4d8
+*** Element info: {Using=xpath, value=//*[@id=&quot;img1&quot;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at stepDefinitions.TractorStepDef.select_from_dropdown(TractorStepDef.java:1204)
+	at &#10045;.Select &quot;EVA&quot; &quot;11084&quot; &quot;08/22/2022&quot; &quot;HCI&quot; &quot;AK&quot; &quot;10&quot; &quot;3.2&quot; from dropdown(file:///C:/Users/Smriti%20Dhugana/Documents/AP-RegressionsmritiBranch1/src/test/resources/featureFiles/FuelPurchaseMaintenance.feature:115)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Validate the Records Returned with Database Record &quot;ebhstaging&quot; &quot;[EBH].[dbo].[FUEL_PUR]&quot; and &quot;11084&quot; &quot;EVA&quot; &quot;08/22/2022&quot; &quot;HCI&quot; &quot;AK&quot; &quot;10&quot; &quot;3.2&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Close all open Browsers on EBH for Tractors</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-featureFiles-FuelPurchaseMaintenance-feature.html">Fuel Purchase Maintenance Validation Feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Regression.html">@Regression</a>
+           <a href="report-tag_FPMScenarioEdit.html">@FPMScenarioEdit</a>
+           <a href="report-tag_q.html">@q</a>
+      </div>
+
+  
+  <span class="lead-duration duration">24.154</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-22">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">(FANDM-77) Validation of EDIT on Fuel Purchase Maintenance Page</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-22" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-23">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-23" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Run Test for Environment &quot;ebhstaging&quot; on Browser &quot;chrome&quot; for EBH Tractors and Enter the url</span>
+  
+  <span class="lead-duration duration">2.395</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Login to the EBH with username &quot;SmritiTest&quot; and password &quot;Legendary@1&quot; for EBH Tractors</span>
+  
+  <span class="lead-duration duration">1.530</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to the Corporate Page on Main Menu then to the Fuel and Mileage page for EBH Tractors</span>
+  
+  <span class="lead-duration duration">0.918</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to Fuel Purchase Maintenance Page</span>
+  
+  <span class="lead-duration duration">2.218</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">Select &quot;EVA&quot; &quot;55922&quot; &quot;08/17/2022&quot; &quot;HCI&quot; &quot;PA&quot; &quot;8&quot; &quot;4&quot; from dropdown</span>
+  
+  <span class="lead-duration duration">17.093</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-24">
+          <a>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;img1&quot;]&quot;}</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;img1&quot;]&quot;}
+  (Session info: chrome=105.0.5195.102)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'SCH-ITLT-50', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\SMRITI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d5e47fa8bc35d43ad4dc09776b18d20a
+*** Element info: {Using=xpath, value=//*[@id=&quot;img1&quot;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at stepDefinitions.TractorStepDef.select_from_dropdown(TractorStepDef.java:1204)
+	at &#10045;.Select &quot;EVA&quot; &quot;55922&quot; &quot;08/17/2022&quot; &quot;HCI&quot; &quot;PA&quot; &quot;8&quot; &quot;4&quot; from dropdown(file:///C:/Users/Smriti%20Dhugana/Documents/AP-RegressionsmritiBranch1/src/test/resources/featureFiles/FuelPurchaseMaintenance.feature:131)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on Edit, and edit the fields &quot;AK&quot; &quot;10&quot; &quot;3.5&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click Save on Edit Fuel Purchase</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Validate the Newly Edited Record with Database Record &quot;ebhstaging&quot; &quot;[EBH].[dbo].[FUEL_PUR]&quot; and &quot;55922&quot; &quot;EVA&quot; &quot;08/17/2022&quot; &quot;AK&quot; &quot;PA&quot; &quot;10&quot; &quot;3.5&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Close all open Browsers on EBH for Tractors</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
