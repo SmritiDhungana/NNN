@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" verbose="1" parallel="tests">
+
+
+<test name="C:/Users/Smriti Dhugana/Documents/AP-RegressionsmritiBranch1" annotations="JDK"
+      preserve-order="true">
+    <classes>
+        <class name="runners.AgentSettlingRunnerTest" />
+    </classes>
+</test>
+</suite>
