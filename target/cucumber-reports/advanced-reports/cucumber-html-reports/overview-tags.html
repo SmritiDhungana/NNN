@@ -49,28 +49,28 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@AARAgentManagementFile",  "@AARAgentManagementWeeklyCutoffDay/Time",  "@AccountFile",  "@AgentCommissionCalculation",  "@AgentCommissionMaintenance",  "@AgentDeductionTestForAgentWithoutRecordOnAgentSettlementInfoTable",  "@AgentReimbursementTestForAgentWithoutRecordOnAgentSettlementInfoTable",  "@AgentSettlementAdjustmentsAgentCode",  "@AgentSettlementAdjustmentsVendorId",  "@AgentSettlementFlagMaintenance",  "@AgentSettlementInquiryAgent",  "@AgentSettlementInquiryPayCodes",  "@AgentSettlementInquiryVendor",  "@AgentsCurrentlyBeingSettledAgentCode",  "@AgentsCurrentlyBeingSettledVendorCode",  "@AgentsYoureSettlingAddedRemoved",  "@BCPDCreateBillNeg",  "@BCPDCreateBillPositive",  "@BCPDOrderNumOnDB",  "@BookLoadScenarioOutLine",  "@DBAgentSettlements&amp;AgentStlTrans",  "@DBOrderDocs&amp;TfDocDataD4",  "@EquipmentConsole",  "@FPMScenarioEdit",  "@FPMScenarioNew",  "@FPMScenarioReportIFTA",  "@FPMScenarioReportTractorID",  "@FPMValidationIFTA",  "@FPMValidationIFTAEarliestDate",  "@FPMValidationIFTALatestDate",  "@FPMValidationTractorID",  "@FPMValidationTractorIDEarliestDate",  "@FPMValidationTractorIDLatestDate",  "@IdentifyINVOICEforAgentDeduction",  "@IdentifyINVOICEforAgentDeductionTestForAgentWithoutRecordOnAgentSettlementInfoTable",  "@IdentifyINVOICEforAgentReimbursement",  "@IdentifyINVOICEforAgentReimbursementTestForAgentWithoutRecordOnAgentSettlementInfoTable",  "@LocationFile",  "@MyActiveAgentsNotSettled",  "@OWTBFContinue",  "@PDOnlyCreateBillNeg",  "@PDOnlyCreateBillPositive",  "@PDOnlyOrderNumOnDB",  "@Regression",  "@RetrieveNewOrderPRo",  "@ScenarioActiveCompleteActive",  "@ScenarioAdvancedSearchAgentCode",  "@ScenarioAdvancedSearchVendorCode",  "@ScenarioDeleteButton",  "@ScenarioOnEditMaxLimitandTotaltoDate",  "@ScenarioOnNewDATE",  "@ScenarioQuickEntry",  "@ScenarioReport",  "@ScenarioViewButton",  "@TractorAARLogin",  "@TractorAARLoginAnotherAARisSettlingTheAgentNOTVerified",  "@TractorAARLoginAnotherAARisSettlingTheAgentVerified",  "@TractorAARLoginNoOneIsCurrentlySettling",  "@TractorReimbursement",  "@TractorVendorRelationshipOwnerId",  "@TractorVendorRelationshipUnitNumber",  "@TractorVendorRelationshipVendorCode",  "@VerifyDataInTables",  "@VerifyTaxAndAdminBillingCodesHaveBeenSetup&amp;IdentifyINVOICEforBillCustomer",  "@q", ] ,
+        labels:  [ "@AccountFile",  "@AgentCommissionCalculation",  "@AgentCommissionMaintenance",  "@BookLoadScenarioOutLine",  "@LocationFile",  "@Regression",  "@TractorVendorRelationshipOwnerId",  "@TractorVendorRelationshipUnitNumber",  "@TractorVendorRelationshipVendorCode", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  44.44,  72.73,  100.00,  100.00,  100.00,  100.00,  71.43,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  75.00,  100.00,  100.00,  100.00,  92.74,  100.00,  55.56,  30.43,  100.00,  100.00,  62.50,  100.00,  100.00,  100.00,  75.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  87.50, ]             },
+                data:  [ 100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00, ]             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  11.11,  9.09,  0.00,  0.00,  0.00,  0.00,  14.29,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  6.25,  0.00,  0.00,  0.00,  1.24,  0.00,  5.56,  4.35,  0.00,  0.00,  6.25,  0.00,  0.00,  0.00,  8.33,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  3.75, ]             },
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ]             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  44.44,  18.18,  0.00,  0.00,  0.00,  0.00,  14.29,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  18.75,  0.00,  0.00,  0.00,  6.03,  0.00,  38.89,  65.22,  0.00,  0.00,  31.25,  0.00,  0.00,  0.00,  16.67,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  8.75, ]             },
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ]             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ]             },
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ]             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ]             }
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ]             }
         ]
     };
 
@@ -131,7 +131,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>AP-RegressionsmritiBranch1</td>
               <td>1</td>
-            <td>09 Sep 2022, 08:55</td>
+            <td>12 Sep 2022, 07:54</td>
     </tr>
   </tbody>
 </table>
@@ -193,40 +193,6 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="report-tag_AARAgentManagementFile.html">@AARAgentManagementFile</a></td>
-        
-        <td      class="passed"    >13</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">13</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="102543000000">1:42.543</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_AARAgentManagementWeeklyCutoffDay-Time.html">@AARAgentManagementWeeklyCutoffDay/Time</a></td>
-        
-        <td      class="passed"    >9</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="76411000000">1:16.411</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
         <td class="tagname"><a href="report-tag_AccountFile.html">@AccountFile</a></td>
         
         <td      class="passed"    >12</td>
@@ -240,7 +206,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="77758000000">1:17.758</td>
+        <td class="duration" data-value="70832000000">1:10.832</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -257,7 +223,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="32053000000">32.053</td>
+        <td class="duration" data-value="32408000000">32.408</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -274,245 +240,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="35026000000">35.026</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_AgentDeductionTestForAgentWithoutRecordOnAgentSettlementInfoTable.html">@AgentDeductionTestForAgentWithoutRecordOnAgentSettlementInfoTable</a></td>
-        
-        <td      class="passed"    >12</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">12</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="34813000000">34.813</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_AgentReimbursementTestForAgentWithoutRecordOnAgentSettlementInfoTable.html">@AgentReimbursementTestForAgentWithoutRecordOnAgentSettlementInfoTable</a></td>
-        
-        <td      class="passed"    >12</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">12</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="40903000000">40.903</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_AgentSettlementAdjustmentsAgentCode.html">@AgentSettlementAdjustmentsAgentCode</a></td>
-        
-        <td      class="passed"    >19</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">19</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="103378000000">1:43.378</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_AgentSettlementAdjustmentsVendorId.html">@AgentSettlementAdjustmentsVendorId</a></td>
-        
-        <td      class="passed"    >19</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">19</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="127853000000">2:7.853</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_AgentSettlementFlagMaintenance.html">@AgentSettlementFlagMaintenance</a></td>
-        
-        <td      class="passed"    >7</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">7</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="11238000000">11.238</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_AgentSettlementInquiryAgent.html">@AgentSettlementInquiryAgent</a></td>
-        
-        <td      class="passed"    >13</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">13</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="52066000000">52.066</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_AgentSettlementInquiryPayCodes.html">@AgentSettlementInquiryPayCodes</a></td>
-        
-        <td      class="passed"    >13</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">13</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="58140000000">58.140</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_AgentSettlementInquiryVendor.html">@AgentSettlementInquiryVendor</a></td>
-        
-        <td      class="passed"    >13</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">13</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="57160000000">57.160</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_AgentsCurrentlyBeingSettledAgentCode.html">@AgentsCurrentlyBeingSettledAgentCode</a></td>
-        
-        <td      class="passed"    >9</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="98962000000">1:38.962</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_AgentsCurrentlyBeingSettledVendorCode.html">@AgentsCurrentlyBeingSettledVendorCode</a></td>
-        
-        <td      class="passed"    >9</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="91160000000">1:31.160</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_AgentsYoureSettlingAddedRemoved.html">@AgentsYoureSettlingAddedRemoved</a></td>
-        
-        <td      class="passed"    >18</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">18</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="72999000000">1:12.999</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_BCPDCreateBillNeg.html">@BCPDCreateBillNeg</a></td>
-        
-        <td      class="passed"    >19</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">19</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="19209000000">19.209</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_BCPDCreateBillPositive.html">@BCPDCreateBillPositive</a></td>
-        
-        <td      class="passed"    >21</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">21</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="62286000000">1:2.286</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_BCPDOrderNumOnDB.html">@BCPDOrderNumOnDB</a></td>
-        
-        <td      class="passed"    >2</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">2</td>
-
-        <td  class="passed"    >2</td>
-        <td >0</td>
-        <td class="total">2</td>
-
-        <td class="duration" data-value="565000000">0.565</td>
+        <td class="duration" data-value="55572000000">55.572</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -529,296 +257,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="27099000000">27.099</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_DBAgentSettlements-AgentStlTrans.html">@DBAgentSettlements&amp;AgentStlTrans</a></td>
-        
-        <td      class="passed"    >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="349000000">0.349</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_DBOrderDocs-TfDocDataD4.html">@DBOrderDocs&amp;TfDocDataD4</a></td>
-        
-        <td      class="passed"    >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="510000000">0.510</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_EquipmentConsole.html">@EquipmentConsole</a></td>
-        
-        <td      class="passed"    >41</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">41</td>
-
-        <td  class="passed"    >9</td>
-        <td >0</td>
-        <td class="total">9</td>
-
-        <td class="duration" data-value="81861000000">1:21.861</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_FPMScenarioEdit.html">@FPMScenarioEdit</a></td>
-        
-        <td      class="passed"    >4</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >4</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="24154000000">24.154</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_FPMScenarioNew.html">@FPMScenarioNew</a></td>
-        
-        <td      class="passed"    >8</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >2</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">11</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="57808000000">57.808</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_FPMScenarioReportIFTA.html">@FPMScenarioReportIFTA</a></td>
-        
-        <td      class="passed"    >9</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="39025000000">39.025</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_FPMScenarioReportTractorID.html">@FPMScenarioReportTractorID</a></td>
-        
-        <td      class="passed"    >9</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="40972000000">40.972</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_FPMValidationIFTA.html">@FPMValidationIFTA</a></td>
-        
-        <td      class="passed"    >7</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">7</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="31619000000">31.619</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_FPMValidationIFTAEarliestDate.html">@FPMValidationIFTAEarliestDate</a></td>
-        
-        <td      class="passed"    >7</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">7</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="27585000000">27.585</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_FPMValidationIFTALatestDate.html">@FPMValidationIFTALatestDate</a></td>
-        
-        <td      class="passed"    >5</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">7</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="28767000000">28.767</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_FPMValidationTractorID.html">@FPMValidationTractorID</a></td>
-        
-        <td      class="passed"    >7</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">7</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="31607000000">31.607</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_FPMValidationTractorIDEarliestDate.html">@FPMValidationTractorIDEarliestDate</a></td>
-        
-        <td      class="passed"    >7</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">7</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="29686000000">29.686</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_FPMValidationTractorIDLatestDate.html">@FPMValidationTractorIDLatestDate</a></td>
-        
-        <td      class="passed"    >7</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">7</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="28129000000">28.129</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_IdentifyINVOICEforAgentDeduction.html">@IdentifyINVOICEforAgentDeduction</a></td>
-        
-        <td      class="passed"    >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="486000000">0.486</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_IdentifyINVOICEforAgentDeductionTestForAgentWithoutRecordOnAgentSettlementInfoTable.html">@IdentifyINVOICEforAgentDeductionTestForAgentWithoutRecordOnAgentSettlementInfoTable</a></td>
-        
-        <td      class="passed"    >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="386000000">0.386</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_IdentifyINVOICEforAgentReimbursement.html">@IdentifyINVOICEforAgentReimbursement</a></td>
-        
-        <td      class="passed"    >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="423000000">0.423</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_IdentifyINVOICEforAgentReimbursementTestForAgentWithoutRecordOnAgentSettlementInfoTable.html">@IdentifyINVOICEforAgentReimbursementTestForAgentWithoutRecordOnAgentSettlementInfoTable</a></td>
-        
-        <td      class="passed"    >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="408000000">0.408</td>
+        <td class="duration" data-value="23463000000">23.463</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -835,364 +274,24 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="17620000000">17.620</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_MyActiveAgentsNotSettled.html">@MyActiveAgentsNotSettled</a></td>
-        
-        <td      class="passed"    >12</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">12</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="24398000000">24.398</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_OWTBFContinue.html">@OWTBFContinue</a></td>
-        
-        <td      class="passed"    >12</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >3</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">16</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="26996000000">26.996</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_PDOnlyCreateBillNeg.html">@PDOnlyCreateBillNeg</a></td>
-        
-        <td      class="passed"    >19</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">19</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="17878000000">17.878</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_PDOnlyCreateBillPositive.html">@PDOnlyCreateBillPositive</a></td>
-        
-        <td      class="passed"    >21</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">21</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="49714000000">49.714</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_PDOnlyOrderNumOnDB.html">@PDOnlyOrderNumOnDB</a></td>
-        
-        <td      class="passed"    >2</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">2</td>
-
-        <td  class="passed"    >2</td>
-        <td >0</td>
-        <td class="total">2</td>
-
-        <td class="duration" data-value="1388000000">1.388</td>
+        <td class="duration" data-value="18727000000">18.727</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="report-tag_Regression.html">@Regression</a></td>
         
-        <td      class="passed"    >600</td>
-        <td      class="failed"    >8</td>
-        <td     class="skipped"   >39</td>
+        <td      class="passed"    >79</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">647</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">79</td>
 
-        <td  class="passed"    >56</td>
-        <td  class="failed"    >8</td>
-        <td class="total">64</td>
-
-        <td class="duration" data-value="3560015000000">59:20.015</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_RetrieveNewOrderPRo.html">@RetrieveNewOrderPRo</a></td>
-        
-        <td      class="passed"    >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="310000000">0.310</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_ScenarioActiveCompleteActive.html">@ScenarioActiveCompleteActive</a></td>
-        
-        <td      class="passed"    >10</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >7</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">18</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="62592000000">1:2.592</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_ScenarioAdvancedSearchAgentCode.html">@ScenarioAdvancedSearchAgentCode</a></td>
-        
-        <td      class="passed"    >7</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >15</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">23</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="165574000000">2:45.574</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_ScenarioAdvancedSearchVendorCode.html">@ScenarioAdvancedSearchVendorCode</a></td>
-        
-        <td      class="passed"    >23</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">23</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="292044000000">4:52.044</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_ScenarioDeleteButton.html">@ScenarioDeleteButton</a></td>
-        
-        <td      class="passed"    >11</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">11</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="42245000000">42.245</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_ScenarioOnEditMaxLimitandTotaltoDate.html">@ScenarioOnEditMaxLimitandTotaltoDate</a></td>
-        
-        <td      class="passed"    >10</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >5</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">16</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="47477000000">47.477</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_ScenarioOnNewDATE.html">@ScenarioOnNewDATE</a></td>
-        
-        <td      class="passed"    >12</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">12</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="63242000000">1:3.242</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_ScenarioQuickEntry.html">@ScenarioQuickEntry</a></td>
-        
-        <td      class="passed"    >11</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">11</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="36453000000">36.453</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_ScenarioReport.html">@ScenarioReport</a></td>
-        
-        <td      class="passed"    >17</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">17</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="73795000000">1:13.795</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_ScenarioViewButton.html">@ScenarioViewButton</a></td>
-        
-        <td      class="passed"    >9</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >2</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">12</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="30422000000">30.422</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_TractorAARLogin.html">@TractorAARLogin</a></td>
-        
-        <td      class="passed"    >9</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="600967000000">10:0.967</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_TractorAARLoginAnotherAARisSettlingTheAgentNOTVerified.html">@TractorAARLoginAnotherAARisSettlingTheAgentNOTVerified</a></td>
-        
-        <td      class="passed"    >9</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="78825000000">1:18.825</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_TractorAARLoginAnotherAARisSettlingTheAgentVerified.html">@TractorAARLoginAnotherAARisSettlingTheAgentVerified</a></td>
-        
-        <td      class="passed"    >9</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="81388000000">1:21.388</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_TractorAARLoginNoOneIsCurrentlySettling.html">@TractorAARLoginNoOneIsCurrentlySettling</a></td>
-        
-        <td      class="passed"    >9</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="77726000000">1:17.726</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_TractorReimbursement.html">@TractorReimbursement</a></td>
-        
-        <td      class="passed"    >8</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
+        <td  class="passed"    >8</td>
         <td >0</td>
         <td class="total">8</td>
 
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="37368000000">37.368</td>
+        <td class="duration" data-value="332500000000">5:32.500</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -1209,24 +308,24 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="66575000000">1:6.575</td>
+        <td class="duration" data-value="50909000000">50.909</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="report-tag_TractorVendorRelationshipUnitNumber.html">@TractorVendorRelationshipUnitNumber</a></td>
         
-        <td      class="passed"    >11</td>
+        <td      class="passed"    >7</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">11</td>
+        <td class="total">7</td>
 
         <td  class="passed"    >1</td>
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="71794000000">1:11.794</td>
+        <td class="duration" data-value="29850000000">29.850</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -1243,92 +342,41 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="65556000000">1:5.556</td>
+        <td class="duration" data-value="50739000000">50.739</td>
         <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_VerifyDataInTables.html">@VerifyDataInTables</a></td>
-        
-        <td      class="passed"    >10</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">10</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="2952000000">2.952</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_VerifyTaxAndAdminBillingCodesHaveBeenSetup-IdentifyINVOICEforBillCustomer.html">@VerifyTaxAndAdminBillingCodesHaveBeenSetup&amp;IdentifyINVOICEforBillCustomer</a></td>
-        
-        <td      class="passed"    >2</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">2</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="1180000000">1.180</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_q.html">@q</a></td>
-        
-        <td      class="passed"    >70</td>
-        <td      class="failed"    >3</td>
-        <td     class="skipped"   >7</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">80</td>
-
-        <td  class="passed"    >7</td>
-        <td  class="failed"    >3</td>
-        <td class="total">10</td>
-
-        <td class="duration" data-value="339352000000">5:39.352</td>
-        <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-            <td>1311</td>
-      <td>19</td>
-      <td>85</td>
+            <td>158</td>
       <td>0</td>
       <td>0</td>
-      <td>1415</td>
+      <td>0</td>
+      <td>0</td>
+      <td>158</td>
 
-      <td>128</td>
-      <td>19</td>
-      <td>147</td>
+      <td>16</td>
+      <td>0</td>
+      <td>16</td>
 
-      <td class="duration">2:5:41.243</td>
-      <td>65</td>
+      <td class="duration">11:5.000</td>
+      <td>9</td>
     </tr>
     <tr>
       <td></td>
-            <td>92.65%</td>
-      <td>1.34%</td>
-      <td>6.01%</td>
+            <td>100.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>87.07%</td>
-      <td>12.93%</td>
+      <td>100.00%</td>
+      <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>76.92%</td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

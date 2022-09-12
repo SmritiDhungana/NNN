@@ -9,10 +9,10 @@ Feature: Tractor Vendor Relationship Process Feature
     And Enter Unit Number <unitNumber> and click on Search
    And Validate the Total Records Returned with database Records <environment> <tableName> <unitNumber>
   ##   And Validate the Total Records Returned with database Records DRIVERthreesixty <environment1> <tableName1>
-    And Click on Report Button and on SEARCH RESULTS
-    And Get SEARCH RESULTS Excel Report from Downloads for EBH Tractors
-    And Validate the Excel Search result Report with database Records <environment> <tableName> <unitNumber>
-    And Click on View
+  ##  And Click on Report Button and on SEARCH RESULTS
+  ##  And Get SEARCH RESULTS Excel Report from Downloads for EBH Tractors
+  ##  And Validate the Excel Search result Report with database Records <environment> <tableName> <unitNumber>
+  ##  And Click on View
   #  And Click on Edit
    # And Select the Edit button on Unit No that has Status as COMPLETED
   #  And Click on New

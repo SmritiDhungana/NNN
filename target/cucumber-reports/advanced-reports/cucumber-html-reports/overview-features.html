@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                600,
-                8,
-                39,
+                79,
+                0,
+                0,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 647) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 79) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                56,
-                8
+                8,
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 64) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 8) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   10,
-                   3
+                   4,
+                   0
                ],
                backgroundColor: [
                 "#00B000",
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 13) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -234,7 +234,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>AP-RegressionsmritiBranch1</td>
               <td>1</td>
-            <td>09 Sep 2022, 08:55</td>
+            <td>12 Sep 2022, 07:54</td>
     </tr>
   </tbody>
 </table>
@@ -329,23 +329,6 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="report-feature_file-src-test-resources-featureFiles-AARAgentManagementFile-feature.html">AAR Agent Management File Process Feature</a></td>
-        
-        <td      class="passed"    >58</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">58</td>
-
-        <td  class="passed"    >6</td>
-        <td >0</td>
-        <td class="total">6</td>
-
-        <td class="duration" data-value="1017860000000">16:57.860</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
         <td class="tagname"><a href="report-feature_file-src-test-resources-featureFiles-AgentCommission-feature.html">Agent Settlement Adjustments Process Feature</a></td>
         
         <td      class="passed"    >24</td>
@@ -359,92 +342,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="67079000000">1:7.079</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_file-src-test-resources-featureFiles-AgentSettlementAdjustments-feature.html">Agent Settlement Adjustments Process Feature</a></td>
-        
-        <td      class="passed"    >148</td>
-        <td      class="failed"    >4</td>
-        <td     class="skipped"   >29</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">181</td>
-
-        <td  class="passed"    >7</td>
-        <td  class="failed"    >4</td>
-        <td class="total">11</td>
-
-        <td class="duration" data-value="1045075000000">17:25.075</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_file-src-test-resources-featureFiles-AgentSettlementInquiry-feature.html">Agent Settlement Inquiry Process Feature</a></td>
-        
-        <td      class="passed"    >39</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">39</td>
-
-        <td  class="passed"    >3</td>
-        <td >0</td>
-        <td class="total">3</td>
-
-        <td class="duration" data-value="167366000000">2:47.366</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_file-src-test-resources-featureFiles-AgentSettling-feature.html">Agent Settling Transaction Process Feature</a></td>
-        
-        <td      class="passed"    >51</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >3</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">55</td>
-
-        <td  class="passed"    >5</td>
-        <td  class="failed"    >1</td>
-        <td class="total">6</td>
-
-        <td class="duration" data-value="136490000000">2:16.490</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_file-src-test-resources-featureFiles-AgentsCurrentlyBeingSettled-feature.html">Agent Settlement Adjustments Process Feature</a></td>
-        
-        <td      class="passed"    >18</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">18</td>
-
-        <td  class="passed"    >2</td>
-        <td >0</td>
-        <td class="total">2</td>
-
-        <td class="duration" data-value="190122000000">3:10.122</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_file-src-test-resources-featureFiles-BCPDTractorValidation-feature.html">BCPD Tractor Validation Feature</a></td>
-        
-        <td      class="passed"    >84</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">84</td>
-
-        <td  class="passed"    >8</td>
-        <td >0</td>
-        <td class="total">8</td>
-
-        <td class="duration" data-value="151040000000">2:31.040</td>
+        <td class="duration" data-value="87980000000">1:27.980</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -461,7 +359,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="95378000000">1:35.378</td>
+        <td class="duration" data-value="89559000000">1:29.559</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -478,75 +376,24 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="27099000000">27.099</td>
+        <td class="duration" data-value="23463000000">23.463</td>
         <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_file-src-test-resources-featureFiles-EquipmentConsoleAgentAdjustments-feature.html">Equipment Console Process Feature</a></td>
-        
-        <td      class="passed"    >41</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">41</td>
-
-        <td  class="passed"    >9</td>
-        <td >0</td>
-        <td class="total">9</td>
-
-        <td class="duration" data-value="81861000000">1:21.861</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_file-src-test-resources-featureFiles-EquipmentConsoleTractorAdjustments-feature.html">Equipment Console Tractor Adjustments Process Feature</a></td>
-        
-        <td      class="passed"    >8</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">8</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="37368000000">37.368</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_file-src-test-resources-featureFiles-FuelPurchaseMaintenance-feature.html">Fuel Purchase Maintenance Validation Feature</a></td>
-        
-        <td      class="passed"    >70</td>
-        <td      class="failed"    >3</td>
-        <td     class="skipped"   >7</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">80</td>
-
-        <td  class="passed"    >7</td>
-        <td  class="failed"    >3</td>
-        <td class="total">10</td>
-
-        <td class="duration" data-value="339352000000">5:39.352</td>
-        <td class="failed">Failed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="report-feature_file-src-test-resources-featureFiles-TractorVendorRelationship-feature.html">Tractor Vendor Relationship Process Feature</a></td>
         
-        <td      class="passed"    >33</td>
+        <td      class="passed"    >29</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">33</td>
+        <td class="total">29</td>
 
         <td  class="passed"    >3</td>
         <td >0</td>
         <td class="total">3</td>
 
-        <td class="duration" data-value="203925000000">3:23.925</td>
+        <td class="duration" data-value="131498000000">2:11.498</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
@@ -554,33 +401,33 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-            <td>600</td>
-      <td>8</td>
-      <td>39</td>
+            <td>79</td>
       <td>0</td>
       <td>0</td>
-      <td>647</td>
+      <td>0</td>
+      <td>0</td>
+      <td>79</td>
 
-      <td>56</td>
       <td>8</td>
-      <td>64</td>
+      <td>0</td>
+      <td>8</td>
 
-      <td class="duration">59:20.015</td>
-      <td>13</td>
+      <td class="duration">5:32.500</td>
+      <td>4</td>
     </tr>
     <tr>
       <td></td>
-            <td>92.74%</td>
-      <td>1.24%</td>
-      <td>6.03%</td>
+            <td>100.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>87.50%</td>
-      <td>12.50%</td>
+      <td>100.00%</td>
+      <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>76.92%</td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

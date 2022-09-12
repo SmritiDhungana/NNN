@@ -1,5 +1,0 @@
-file:src/test/resources/featureFiles/FuelPurchaseMaintenance.feature:100:120:138
-file:src/test/resources/featureFiles/EquipmentConsoleAgentAdjustments.feature:78:162
-file:src/test/resources/featureFiles/AgentSettlementAdjustments.feature:27:55:86:135:200:221
-file:src/test/resources/featureFiles/EquipmentConsoleTractorAdjustments.feature:41
-file:src/test/resources/featureFiles/AgentSettling.feature:25
