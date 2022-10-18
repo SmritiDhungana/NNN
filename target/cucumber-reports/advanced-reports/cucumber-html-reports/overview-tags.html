@@ -49,28 +49,28 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@AccountFile",  "@AgentCommissionCalculation",  "@AgentCommissionMaintenance",  "@BookLoadScenarioOutLine",  "@LocationFile",  "@Regression",  "@TractorVendorRelationshipOwnerId",  "@TractorVendorRelationshipUnitNumber",  "@TractorVendorRelationshipVendorCode", ] ,
+        labels:  [ "@AgentReimbursement",  "@EquipmentConsole",  "@IdentifyINVOICEforAgentReimbursement",  "@Regressions",  "@aa", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00, ]             },
+                data:  [ 46.67,  50.00,  100.00,  50.00,  50.00, ]             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ]             },
+                data:  [ 6.67,  6.25,  0.00,  6.25,  6.25, ]             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ]             },
+                data:  [ 46.67,  43.75,  0.00,  43.75,  43.75, ]             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ]             },
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ]             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ]             }
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ]             }
         ]
     };
 
@@ -131,7 +131,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>AP-RegressionsmritiBranch1</td>
               <td>1</td>
-            <td>12 Sep 2022, 07:54</td>
+            <td>18 Oct 2022, 11:56</td>
     </tr>
   </tbody>
 </table>
@@ -193,190 +193,122 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="report-tag_AccountFile.html">@AccountFile</a></td>
-        
-        <td      class="passed"    >12</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">12</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="70832000000">1:10.832</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_AgentCommissionCalculation.html">@AgentCommissionCalculation</a></td>
-        
-        <td      class="passed"    >14</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">14</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="32408000000">32.408</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_AgentCommissionMaintenance.html">@AgentCommissionMaintenance</a></td>
-        
-        <td      class="passed"    >10</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">10</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="55572000000">55.572</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_BookLoadScenarioOutLine.html">@BookLoadScenarioOutLine</a></td>
-        
-        <td      class="passed"    >6</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">6</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="23463000000">23.463</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_LocationFile.html">@LocationFile</a></td>
-        
-        <td      class="passed"    >8</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">8</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="18727000000">18.727</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_Regression.html">@Regression</a></td>
-        
-        <td      class="passed"    >79</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">79</td>
-
-        <td  class="passed"    >8</td>
-        <td >0</td>
-        <td class="total">8</td>
-
-        <td class="duration" data-value="332500000000">5:32.500</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_TractorVendorRelationshipOwnerId.html">@TractorVendorRelationshipOwnerId</a></td>
-        
-        <td      class="passed"    >11</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">11</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="50909000000">50.909</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_TractorVendorRelationshipUnitNumber.html">@TractorVendorRelationshipUnitNumber</a></td>
+        <td class="tagname"><a href="report-tag_AgentReimbursement.html">@AgentReimbursement</a></td>
         
         <td      class="passed"    >7</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >7</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">15</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="23965000000">23.965</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_EquipmentConsole.html">@EquipmentConsole</a></td>
+        
+        <td      class="passed"    >8</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >7</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">16</td>
+
+        <td  class="passed"    >1</td>
+        <td  class="failed"    >1</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="25069000000">25.069</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_IdentifyINVOICEforAgentReimbursement.html">@IdentifyINVOICEforAgentReimbursement</a></td>
+        
+        <td      class="passed"    >1</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">7</td>
+        <td class="total">1</td>
 
         <td  class="passed"    >1</td>
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="29850000000">29.850</td>
+        <td class="duration" data-value="1104000000">1.104</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-tag_TractorVendorRelationshipVendorCode.html">@TractorVendorRelationshipVendorCode</a></td>
+        <td class="tagname"><a href="report-tag_Regressions.html">@Regressions</a></td>
         
-        <td      class="passed"    >11</td>
+        <td      class="passed"    >8</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >7</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">11</td>
+        <td class="total">16</td>
 
         <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
+        <td  class="failed"    >1</td>
+        <td class="total">2</td>
 
-        <td class="duration" data-value="50739000000">50.739</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="25069000000">25.069</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_aa.html">@aa</a></td>
+        
+        <td      class="passed"    >8</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >7</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">16</td>
+
+        <td  class="passed"    >1</td>
+        <td  class="failed"    >1</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="25069000000">25.069</td>
+        <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-            <td>158</td>
+            <td>32</td>
+      <td>4</td>
+      <td>28</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>158</td>
+      <td>64</td>
 
-      <td>16</td>
-      <td>0</td>
-      <td>16</td>
+      <td>4</td>
+      <td>4</td>
+      <td>8</td>
 
-      <td class="duration">11:5.000</td>
-      <td>9</td>
+      <td class="duration">1:40.276</td>
+      <td>5</td>
     </tr>
     <tr>
       <td></td>
-            <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
+            <td>50.00%</td>
+      <td>6.25%</td>
+      <td>43.75%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>100.00%</td>
+      <td>50.00%</td>
+      <td>50.00%</td>
+      <td></td>
+      <td></td>
       <td>0.00%</td>
-      <td></td>
-      <td></td>
-      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

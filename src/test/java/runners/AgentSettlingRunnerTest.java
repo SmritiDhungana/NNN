@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-reports/cucumber.html",
                 "rerun:target/cucumber-reports/rerun.txt",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-        tags = "@Regression"
+        tags = "@Smoke"
 )
 
 public class AgentSettlingRunnerTest {

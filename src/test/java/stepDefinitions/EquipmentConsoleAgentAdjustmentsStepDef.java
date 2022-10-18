@@ -1,12 +1,13 @@
 package stepDefinitions;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -16,6 +17,7 @@ import stepDefinitions.CommonUtils.BrowserDriverInitialization;
 import stepDefinitions.Pages.EquipmentConsoleLoginPage;
 import stepDefinitions.Pages.EquipmentConsolePage;
 
+import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +35,36 @@ public class EquipmentConsoleAgentAdjustmentsStepDef {
     EquipmentConsolePage equipmentConsolePage = new EquipmentConsolePage(driver);
     private static Statement stmt;
     BrowserDriverInitialization browserDriverInitialization = new BrowserDriverInitialization();
+
+
+
+    @Before
+    public static void setUp() {
+        System.out.println("Launch EBH ........");
+    }
+
+
+    @After("@aa")
+    public void takeScreenshotOnFailure(Scenario scenario) {
+        if (scenario.isFailed()) {
+            TakesScreenshot ts = (TakesScreenshot) driver;
+            byte[] src = ts.getScreenshotAs(OutputType.BYTES);
+            scenario.attach(src, "image/png", "screenshot");
+        }
+    }
+
+    @After (order = 0)
+    public void tearDown() {
+        System.out.println("Close EBH ........");
+    }
+
+
+
+
+
+
+
+
 
 
     //............................................/ BACKGROUND /................................................//

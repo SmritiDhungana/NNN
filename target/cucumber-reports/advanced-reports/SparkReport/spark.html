@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Sep 12, 2022 07:48:54 AM</span></a>
+<a href="#"><span class="badge badge-primary">Oct 18, 2022 12:03:25 PM</span></a>
 </li>
 </ul>
 </div>
@@ -57,6 +57,11 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -66,25 +71,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Sep 12, 2022 07:48:54 AM</h3>
+<h3>Oct 18, 2022 12:03:25 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Sep 12, 2022 07:54:27 AM</h3>
+<h3>Oct 18, 2022 12:04:13 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>4</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -100,12 +105,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>4</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>2</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -123,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>8</b> scenarios passed</small></div>
+<div><small data-tooltip='33%'><b>1</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='66%'><b>2</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -143,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>79</b> steps passed</small></div>
+<div><small data-tooltip='60%'><b>17</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='7%'><b>2</b> steps failed,
+<b>9</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Agent Settlement Adjustments Process Feature":88.077,"Basic File Maintenance Process Feature":89.593,"Billing Feature":23.466,"Tractor Vendor Relationship Process Feature":131.549
+"Agent Settlement Adjustments Process Feature":21.346,"Equipment Console Process Feature":25.411
 };
 </script>
 <div class="row">
@@ -172,7 +177,15 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@AgentCommissionCalculation</td>
+<td>@EquipmentConsole</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@IdentifyINVOICEforAgentReimbursement</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -180,68 +193,44 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@TractorVendorRelationshipUnitNumber</td>
+<td>@bb</td>
+<td>0</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 <tr>
-<td>@TractorVendorRelationshipVendorCode</td>
+<td>@AgentReimbursement</td>
+<td>0</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 <tr>
-<td>@Regression</td>
-<td>16</td>
+<td>@Smoke</td>
+<td>2</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>33.333%</td>
 </tr>
 <tr>
 <td>@AgentCommissionMaintenance</td>
+<td>0</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 <tr>
-<td>@BookLoadScenarioOutLine</td>
+<td>@aa</td>
+<td>2</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@LocationFile</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@AccountFile</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TractorVendorRelationshipOwnerId</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>50%</td>
 </tr>
 </tbody>
 </table></div>
@@ -278,21 +267,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 4,
-failParent: 0,
+passParent: 0,
+failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 8,
-failChild: 0,
+passChild: 1,
+failChild: 2,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 79,
-failGrandChild: 0,
+passGrandChild: 17,
+failGrandChild: 2,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 9,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -306,7 +295,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -314,31 +303,31 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@AgentCommissionCalculation</a><a class="dropdown-item" href="#">@TractorVendorRelationshipUnitNumber</a><a class="dropdown-item" href="#">@TractorVendorRelationshipVendorCode</a><a class="dropdown-item" href="#">@Regression</a><a class="dropdown-item" href="#">@AgentCommissionMaintenance</a><a class="dropdown-item" href="#">@BookLoadScenarioOutLine</a><a class="dropdown-item" href="#">@LocationFile</a><a class="dropdown-item" href="#">@AccountFile</a><a class="dropdown-item" href="#">@TractorVendorRelationshipOwnerId</a>
+<a class="dropdown-item" href="#">@EquipmentConsole</a><a class="dropdown-item" href="#">@IdentifyINVOICEforAgentReimbursement</a><a class="dropdown-item" href="#">@bb</a><a class="dropdown-item" href="#">@AgentReimbursement</a><a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@AgentCommissionMaintenance</a><a class="dropdown-item" href="#">@aa</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Agent Settlement Adjustments Process Feature</p>
             <p class="text-sm">
-              <span>7:48:55 AM</span> / <span>00:01:28:077</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>12:03:26 PM</span> / <span>00:00:21:346</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Agent Settlement Adjustments Process Feature</h5>
-<span class='badge badge-success'>09.12.2022 7:48:55 AM</span>
-<span class='badge badge-danger'>09.12.2022 7:50:23 AM</span>
-<span class='badge badge-default'>00:01:28:077</span>
+<h5 class="test-status text-fail">Agent Settlement Adjustments Process Feature</h5>
+<span class='badge badge-success'>10.18.2022 12:03:26 PM</span>
+<span class='badge badge-danger'>10.18.2022 12:03:47 PM</span>
+<span class='badge badge-default'>00:00:21:346</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -350,17 +339,23 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Validate Agent Commission Maintenance in Launch Environment</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Validate Agent Commission Maintenance in Launch Environment</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
-        <div class="scenario_outline collapse">
+        <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Validate Agent Commission Maintenance in Launch Environment</div>
+                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>Validate Agent Commission Maintenance in Launch Environment</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
                 </div>
               </div>
-              <div class="card-body mt-3 collapse">
+              <div class="card-body mt-3 ">
                   <div class="step pass-bg">
                     <span>Given Run Test for "ebhlaunch" on Browser "chrome" and Enter the url for EBH</span>
       <div>
@@ -392,110 +387,41 @@ eventsCount: 5,
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And Enter Agent/Location Code as "YNN" and click</span>
+                    <span>And Enter Agent/Location Code as "YNNYNN" and click</span>
       <div>
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step fail-bg">
                     <span>And Validate Agent Code Description and Agent is active</span>
       <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.AgentSettlingStepDef.Validate_Agent_Code_Description_and_Agent_is_active(AgentSettlingStepDef.java:3036)
+	at ✽.Validate Agent Code Description and Agent is active(file:///C:/Users/Smriti%20Dhugana/Documents/NNN/src/test/resources/featureFiles/AgentCommission.feature:14)
+</textarea>
+      
       </div>
                   </div>
-                  <div class="step pass-bg">
-                    <span>And Validate Assert Values On Agent Commission Maintenance with Database Record "ebhlaunch" and "[EBHLaunch].[dbo].[usp_GetAgentCommissionDetails]" "YNN" "DCC Daily Chas Chrg DCC RESIDUAL" "BR BROKER COMMISSION BR ALL SPLIT" "YARD Yard Pull YARD NET"</span>
-      <div>
+                  <div class="step skip-bg">
+                    <span>And Validate Assert Values On Agent Commission Maintenance with Database Record "ebhlaunch" and "[EBHLaunch].[dbo].[usp_GetAgentCommissionDetails]" "YNNYNN" "DCC Daily Chas Chrg DCC RESIDUAL" "BR BROKER COMMISSION BR ALL SPLIT" "YARD Yard Pull YARD NET"</span>
+      <div>Step skipped
       </div>
                   </div>
-                  <div class="step pass-bg">
+                  <div class="step skip-bg">
                     <span>Then Close all open Browsers</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>Validate Agent Commission Calculation in Launch Environment</div>
-      </div>
-    </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Validate Agent Commission Calculation in Launch Environment</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given Run Test for "ebhlaunch" on Browser "chrome" and Enter the url for EBH</span>
-      <div>
+      <div>Step skipped
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And Login to the Agents Portal with username "SMRITIDHUNGANA" and password "Legendary@1"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Navigate to the Corporate Page on Main Menu and to the Settlements page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Navigate to Agent Commission Calculation</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Validate you are on Agent Commission Calculation page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Enter Pro Number as "CVA193110"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Click on Calculate Commission</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Validate Vendor Code and Total Commission</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Validate the records returned on Agent Commission Calculation with Database Record "ebhlaunch" and "[EBHLaunch].[dbo].[usp_GetAgentCommissionFinal]" "CVA" "193110"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Click on Display Matrix</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Popup Menu arises insert password "ecomat"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Click on Ok button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Validate Primary Vendor Name and Primary Vendor Code</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then Close all open Browsers</span>
+                    <span>stepDefinitions.AgentSettlingStepDef.takeScreenshotOnFailure1(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
       <div>
       </div>
                   </div>
@@ -506,26 +432,26 @@ eventsCount: 5,
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="30"
+        <li class="test-item"  status="fail" test-id="17"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Basic File Maintenance Process Feature</p>
+            <p class="name">Equipment Console Process Feature</p>
             <p class="text-sm">
-              <span>7:50:23 AM</span> / <span>00:01:29:593</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>12:03:47 PM</span> / <span>00:00:25:411</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Basic File Maintenance Process Feature</h5>
-<span class='badge badge-success'>09.12.2022 7:50:23 AM</span>
-<span class='badge badge-danger'>09.12.2022 7:51:52 AM</span>
-<span class='badge badge-default'>00:01:29:593</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<h5 class="test-status text-fail">Equipment Console Process Feature</h5>
+<span class='badge badge-success'>10.18.2022 12:03:47 PM</span>
+<span class='badge badge-danger'>10.18.2022 12:04:12 PM</span>
+<span class='badge badge-default'>00:00:25:411</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
@@ -536,74 +462,19 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Validate Account File in Launch Environment</div>
+        <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="32"><span class="badge log pass-bg mr-2">Pass</span>Validate Account File in Launch Environment</div>
+                  <div class="node" id="19"><span class="badge log pass-bg mr-2">Pass</span>Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>Given Run Test for "ebhlaunch" on Browser "chrome" and Enter the url for EBH Basic File Maintenance</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Login to the Agents Portal with username "SMRITIDHUNGANA" and password "Legendary@1" for EBH Basic File Maintenance</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Navigate to the Corporate Page on Main Menu and to the Basic File Maintenance page for EBH Basic File Maintenance</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Navigate to the Account File page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Enter Agent/Location Code as "BAY" in Search In Box and click</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Verify Bill-To is Checked on and get the Records Returned for "BAY"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Validate Records Returned on Bill-To with Database Record "ebhlaunch" and "[EBHLaunch].[dbo].[ACCOUNTS]" "BAY %" "BAY METAL INC"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Click on SH/CON, Verify SH/CON is Checked on and get the Records Returned for "BAY"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Validate Records Returned on SH/CON with Database Record "ebhlaunch" and "[EBHLaunch].[dbo].[ACCOUNTS]" "BAY %" "BJW00632"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Click Select of first column</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Validate Table Header and Name on Account File Maintenance</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then Close all open Browsers on EBH</span>
+                    <span>Given Locate a Record from Database, Agent Status must have a Status of Agent Review or Corp Review "ebhlaunch" "[Evans].[dbo].[InvoiceRegisterRecord]" "01/01/2022"</span>
       <div>
       </div>
                   </div>
@@ -614,361 +485,129 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>Validate Location File in Launch Environment</div>
-      </div>
-    </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="46"><span class="badge log pass-bg mr-2">Pass</span>Validate Location File in Launch Environment</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given Run Test for "ebhlaunch" on Browser "chrome" and Enter the url for EBH Basic File Maintenance</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Login to the Agents Portal with username "SMRITIDHUNGANA" and password "Legendary@1" for EBH Basic File Maintenance</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Navigate to the Corporate Page on Main Menu and to the Basic File Maintenance page for EBH Basic File Maintenance</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Navigate to the Location File page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Enter Part of Location Name as "MACAR" and click</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Validate Records Returned for Location File Maintenance with Database Record "ebhlaunch" and "[EBHLaunch].[dbo].[LOCATIONS]" "%MACAR%"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Click on Select and Validate Name, Status and AAR Rep</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then Close all open Browsers on EBH</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-</div>
+        <div class="node" id="24"><span class="badge log fail-bg mr-2">Fail</span>Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
           </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="55"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Billing Feature</p>
-            <p class="text-sm">
-              <span>7:51:52 AM</span> / <span>00:00:23:466</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Billing Feature</h5>
-<span class='badge badge-success'>09.12.2022 7:51:52 AM</span>
-<span class='badge badge-danger'>09.12.2022 7:52:16 AM</span>
-<span class='badge badge-default'>00:00:23:466</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=55</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="56"><span class="badge log pass-bg mr-2">Pass</span>Book a Load through Agents Portal in Staging Environment</div>
       </div>
     </div>
-        <div class="scenario_outline collapse">
+        <div class="scenario_outline ">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="57"><span class="badge log pass-bg mr-2">Pass</span>Book a Load through Agents Portal in Staging Environment</div>
+                  <div class="node" id="25"><span class="badge log fail-bg mr-2">Fail</span>Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
                 </div>
               </div>
-              <div class="card-body mt-3 collapse">
+              <div class="card-body mt-3 ">
                   <div class="step pass-bg">
-                    <span>Given run test for "launch" on browser "chrome"</span>
+                    <span>Given Run Test for "eclaunch" on Browser "chrome" and Enter the url for Equipment Console</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And enter the url</span>
+                    <span>And Login to the Portal with USERNAME "eqpb" and PASSWORD "taffy" for Equipment Console</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And login on the agents portal with username "pss" and password "taffy"</span>
+                    <span>And Click on NO on alert</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And navigate to the bookload page</span>
+                    <span>And Enter Invoice Number "JH2209011055DM" in Search Criteria on Equipment Console Interface</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And enter billto as "ICARBGA" from as "WCH00741 " and to as "WCH00742"</span>
+                    <span>And Select Agent Status Button for a record that has a Agent Status, Agent Review or Corp Review "AgentReview"</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then close all open browsers</span>
+                    <span>Then Click on Clear Filters</span>
       <div>
       </div>
                   </div>
-              </div>
-            </div>
-        </div>
-  </div>
+                  <div class="step pass-bg">
+                    <span>And Select Corp Status = Corp Review for that same record that has Agent Status = Agent Reimbursement and Corp Status = Corp Review "CorpReview" "AgentReimbursement" "EDM" "57978"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And Select Agent Reimbursement on CropReview</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" class="row_CorpStatus  button-link">...</a> is not clickable at point (447, 196). Other element would receive the click: <span id="ui-id-2" class="ui-dialog-title">...</span>
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'SCH-ITLT-50', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\SMRITI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 06762fec0984fa69842dbaa712288276
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.select_Agent_Reimbursement_on_CropReview(EquipmentConsoleAgentAdjustmentsStepDef.java:434)
+	at ✽.Select Agent Reimbursement on CropReview(file:///C:/Users/Smriti%20Dhugana/Documents/NNN/src/test/resources/featureFiles/EquipmentConsoleAgentAdjustments.feature:36)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And The Days, Amount and Notes Columns are filled in with the same information that was previously entered. Enter a different Amount, Days or Effective Date "3"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Verify Notes Column has the Customer Number, Chassis No and Container No, prefilled in the Notes Column</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Enter something into the Notes Column and make sure to enter a Comma, Select Ok, Select Go, Select No "   Automation Testing !!!,"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Verify previously entered data remained the same, Select Go, Select Yes, Main Form Appears</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Verify Agent Status and Corp Status = Agent Reimbursement in Main Form</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Query Data in Agent_Adjustments SQL Table, There should be one record on the Agent_Adjustments table for this transaction "launch" "[EBHLaunch].[dbo].[AGENT_ADJUSTMENTS]" "09-02-2022" "EDM57978"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Close all open Browsers for Equipment Console</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.takeScreenshotOnFailure(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded2.png' src="../embedded2.png">
+    
+    </div></div>
 </div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="64"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Tractor Vendor Relationship Process Feature</p>
-            <p class="text-sm">
-              <span>7:52:16 AM</span> / <span>00:02:11:549</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Tractor Vendor Relationship Process Feature</h5>
-<span class='badge badge-success'>09.12.2022 7:52:16 AM</span>
-<span class='badge badge-danger'>09.12.2022 7:54:27 AM</span>
-<span class='badge badge-default'>00:02:11:549</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=64</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="65"><span class="badge log pass-bg mr-2">Pass</span>(TSET-375) Validate Tractor Vendor Relationship with Unit Number</div>
-      </div>
-    </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="66"><span class="badge log pass-bg mr-2">Pass</span>(TSET-375) Validate Tractor Vendor Relationship with Unit Number</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given Run Test for Environment "ebhstaging" on Browser "chrome" for EBH Tractors and Enter the url</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Login to the EBH with username "SmritiTest" and password "Legendary@1" for EBH Tractors</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Navigate to the Corporate Page on Main Menu then to the Settlements page for EBH Tractors</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Given Navigate to Tractor Vendor Relationship</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Enter Unit Number "172270" and click on Search</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Validate the Total Records Returned with database Records "ebhstaging" "[ebh].[dbo].[TRACTOR_VENDOR]" "172270"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then Close all open Browsers on EBH for Tractors</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="74"><span class="badge log pass-bg mr-2">Pass</span>(TSET-375) Validate Tractor Vendor Relationship with Vendor Code</div>
-      </div>
-    </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="75"><span class="badge log pass-bg mr-2">Pass</span>(TSET-375) Validate Tractor Vendor Relationship with Vendor Code</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given Run Test for Environment "ebhstaging" on Browser "chrome" for EBH Tractors and Enter the url</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Login to the EBH with username "SmritiTest" and password "Legendary@1" for EBH Tractors</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Navigate to the Corporate Page on Main Menu then to the Settlements page for EBH Tractors</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Given Navigate to Tractor Vendor Relationship</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Enter Unit Number "172270" and click on Search</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Validate the Total Records Returned with database Records "ebhstaging" "[ebh].[dbo].[TRACTOR_VENDOR]" "172270"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Click on Report Button and on SEARCH RESULTS</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Get SEARCH RESULTS Excel Report from Downloads for EBH Tractors</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Validate the Excel Search result Report with database Records "ebhstaging" "[ebh].[dbo].[TRACTOR_VENDOR]" "172270"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Click on View</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then Close all open Browsers on EBH for Tractors</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="87"><span class="badge log pass-bg mr-2">Pass</span>(TSET-375) Validate Tractor Vendor Relationship with Owner Id</div>
-      </div>
-    </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="88"><span class="badge log pass-bg mr-2">Pass</span>(TSET-375) Validate Tractor Vendor Relationship with Owner Id</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given Run Test for Environment "ebhstaging" on Browser "chrome" for EBH Tractors and Enter the url</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Login to the EBH with username "SmritiTest" and password "Legendary@1" for EBH Tractors</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Navigate to the Corporate Page on Main Menu then to the Settlements page for EBH Tractors</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Given Navigate to Tractor Vendor Relationship</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Enter Unit Number "172270" and click on Search</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Validate the Total Records Returned with database Records "ebhstaging" "[ebh].[dbo].[TRACTOR_VENDOR]" "172270"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Click on Report Button and on SEARCH RESULTS</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Get SEARCH RESULTS Excel Report from Downloads for EBH Tractors</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Validate the Excel Search result Report with database Records "ebhstaging" "[ebh].[dbo].[TRACTOR_VENDOR]" "172270"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Click on View</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then Close all open Browsers on EBH for Tractors</span>
       <div>
       </div>
                   </div>
@@ -992,7 +631,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">9</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">7</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -1000,14 +639,16 @@ eventsCount: 5,
 <div class="test-detail">
 <span class="meta">
 <span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>2</span>
 </span>
-<p class="name">@AgentCommissionCalculation</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">@EquipmentConsole</p>
+<p class="duration text-sm">4 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@AgentCommissionCalculation</h4>
+<h4>@EquipmentConsole</h4>
 <span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1020,21 +661,41 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>07:49:50 AM</td>
+<td>12:03:47 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='14'>Validate Agent Commission Calculation in Launch Environment</a>
+<a href="#" class="linked" test-id='17' id='18'>Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</a>
 <div class="">
-<span class="badge badge-default">Agent Settlement Adjustments Process Feature.Validate Agent Commission Calculation in Launch Environment</span>
+<span class="badge badge-default">Equipment Console Process Feature.Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>07:49:50 AM</td>
+<td>12:03:47 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='15'>Validate Agent Commission Calculation in Launch Environment</a>
+<a href="#" class="linked" test-id='17' id='19'>Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</a>
 <div class="">
-<span class="badge badge-default">Agent Settlement Adjustments Process Feature.Validate Agent Commission Calculation in Launch Environment</span>
+<span class="badge badge-default">Equipment Console Process Feature.Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:03:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='24'>Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</a>
+<div class="">
+<span class="badge badge-default">Equipment Console Process Feature.Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:03:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='25'>Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</a>
+<div class="">
+<span class="badge badge-default">Equipment Console Process Feature.Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
 </div>
 </td>
 </tr>
@@ -1047,12 +708,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">@TractorVendorRelationshipUnitNumber</p>
+<p class="name">@IdentifyINVOICEforAgentReimbursement</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TractorVendorRelationshipUnitNumber</h4>
+<h4>@IdentifyINVOICEforAgentReimbursement</h4>
 <span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1066,21 +727,21 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>07:52:16 AM</td>
+<td>12:03:47 PM</td>
 <td>
-<a href="#" class="linked" test-id='64' id='65'>(TSET-375) Validate Tractor Vendor Relationship with Unit Number</a>
+<a href="#" class="linked" test-id='17' id='18'>Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</a>
 <div class="">
-<span class="badge badge-default">Tractor Vendor Relationship Process Feature.(TSET-375) Validate Tractor Vendor Relationship with Unit Number</span>
+<span class="badge badge-default">Equipment Console Process Feature.Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>07:52:16 AM</td>
+<td>12:03:47 PM</td>
 <td>
-<a href="#" class="linked" test-id='64' id='66'>(TSET-375) Validate Tractor Vendor Relationship with Unit Number</a>
+<a href="#" class="linked" test-id='17' id='19'>Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</a>
 <div class="">
-<span class="badge badge-default">Tractor Vendor Relationship Process Feature.(TSET-375) Validate Tractor Vendor Relationship with Unit Number</span>
+<span class="badge badge-default">Equipment Console Process Feature.Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
 </div>
 </td>
 </tr>
@@ -1091,15 +752,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>2</span>
 </span>
-<p class="name">@TractorVendorRelationshipVendorCode</p>
+<p class="name">@bb</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TractorVendorRelationshipVendorCode</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
+<h4>@bb</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1110,55 +771,9 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:52:46 AM</td>
-<td>
-<a href="#" class="linked" test-id='64' id='74'>(TSET-375) Validate Tractor Vendor Relationship with Vendor Code</a>
-<div class="">
-<span class="badge badge-default">Tractor Vendor Relationship Process Feature.(TSET-375) Validate Tractor Vendor Relationship with Vendor Code</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:52:46 AM</td>
-<td>
-<a href="#" class="linked" test-id='64' id='75'>(TSET-375) Validate Tractor Vendor Relationship with Vendor Code</a>
-<div class="">
-<span class="badge badge-default">Tractor Vendor Relationship Process Feature.(TSET-375) Validate Tractor Vendor Relationship with Vendor Code</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>16</span>
-</span>
-<p class="name">@Regression</p>
-<p class="duration text-sm">16 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Regression</h4>
-<span status="pass" class='badge log pass-bg'>16 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:48:55 AM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:03:26 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Validate Agent Commission Maintenance in Launch Environment</a>
 <div class="">
@@ -1166,9 +781,103 @@ eventsCount: 5,
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:48:55 AM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:03:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Validate Agent Commission Maintenance in Launch Environment</a>
+<div class="">
+<span class="badge badge-default">Agent Settlement Adjustments Process Feature.Validate Agent Commission Maintenance in Launch Environment</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@AgentReimbursement</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AgentReimbursement</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:03:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='24'>Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</a>
+<div class="">
+<span class="badge badge-default">Equipment Console Process Feature.Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:03:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='25'>Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</a>
+<div class="">
+<span class="badge badge-default">Equipment Console Process Feature.Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">@Smoke</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Smoke</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:03:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Validate Agent Commission Maintenance in Launch Environment</a>
+<div class="">
+<span class="badge badge-default">Agent Settlement Adjustments Process Feature.Validate Agent Commission Maintenance in Launch Environment</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:03:26 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='3'>Validate Agent Commission Maintenance in Launch Environment</a>
 <div class="">
@@ -1178,141 +887,41 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>07:49:50 AM</td>
+<td>12:03:47 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='14'>Validate Agent Commission Calculation in Launch Environment</a>
+<a href="#" class="linked" test-id='17' id='18'>Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</a>
 <div class="">
-<span class="badge badge-default">Agent Settlement Adjustments Process Feature.Validate Agent Commission Calculation in Launch Environment</span>
+<span class="badge badge-default">Equipment Console Process Feature.Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>07:49:50 AM</td>
+<td>12:03:47 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='15'>Validate Agent Commission Calculation in Launch Environment</a>
+<a href="#" class="linked" test-id='17' id='19'>Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</a>
 <div class="">
-<span class="badge badge-default">Agent Settlement Adjustments Process Feature.Validate Agent Commission Calculation in Launch Environment</span>
+<span class="badge badge-default">Equipment Console Process Feature.Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:50:23 AM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:03:48 PM</td>
 <td>
-<a href="#" class="linked" test-id='30' id='31'>Validate Account File in Launch Environment</a>
+<a href="#" class="linked" test-id='17' id='24'>Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</a>
 <div class="">
-<span class="badge badge-default">Basic File Maintenance Process Feature.Validate Account File in Launch Environment</span>
+<span class="badge badge-default">Equipment Console Process Feature.Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:50:23 AM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:03:48 PM</td>
 <td>
-<a href="#" class="linked" test-id='30' id='32'>Validate Account File in Launch Environment</a>
+<a href="#" class="linked" test-id='17' id='25'>Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</a>
 <div class="">
-<span class="badge badge-default">Basic File Maintenance Process Feature.Validate Account File in Launch Environment</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:51:34 AM</td>
-<td>
-<a href="#" class="linked" test-id='30' id='45'>Validate Location File in Launch Environment</a>
-<div class="">
-<span class="badge badge-default">Basic File Maintenance Process Feature.Validate Location File in Launch Environment</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:51:34 AM</td>
-<td>
-<a href="#" class="linked" test-id='30' id='46'>Validate Location File in Launch Environment</a>
-<div class="">
-<span class="badge badge-default">Basic File Maintenance Process Feature.Validate Location File in Launch Environment</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:51:52 AM</td>
-<td>
-<a href="#" class="linked" test-id='55' id='56'>Book a Load through Agents Portal in Staging Environment</a>
-<div class="">
-<span class="badge badge-default">Billing Feature.Book a Load through Agents Portal in Staging Environment</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:51:52 AM</td>
-<td>
-<a href="#" class="linked" test-id='55' id='57'>Book a Load through Agents Portal in Staging Environment</a>
-<div class="">
-<span class="badge badge-default">Billing Feature.Book a Load through Agents Portal in Staging Environment</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:52:16 AM</td>
-<td>
-<a href="#" class="linked" test-id='64' id='65'>(TSET-375) Validate Tractor Vendor Relationship with Unit Number</a>
-<div class="">
-<span class="badge badge-default">Tractor Vendor Relationship Process Feature.(TSET-375) Validate Tractor Vendor Relationship with Unit Number</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:52:16 AM</td>
-<td>
-<a href="#" class="linked" test-id='64' id='66'>(TSET-375) Validate Tractor Vendor Relationship with Unit Number</a>
-<div class="">
-<span class="badge badge-default">Tractor Vendor Relationship Process Feature.(TSET-375) Validate Tractor Vendor Relationship with Unit Number</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:52:46 AM</td>
-<td>
-<a href="#" class="linked" test-id='64' id='74'>(TSET-375) Validate Tractor Vendor Relationship with Vendor Code</a>
-<div class="">
-<span class="badge badge-default">Tractor Vendor Relationship Process Feature.(TSET-375) Validate Tractor Vendor Relationship with Vendor Code</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:52:46 AM</td>
-<td>
-<a href="#" class="linked" test-id='64' id='75'>(TSET-375) Validate Tractor Vendor Relationship with Vendor Code</a>
-<div class="">
-<span class="badge badge-default">Tractor Vendor Relationship Process Feature.(TSET-375) Validate Tractor Vendor Relationship with Vendor Code</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:53:37 AM</td>
-<td>
-<a href="#" class="linked" test-id='64' id='87'>(TSET-375) Validate Tractor Vendor Relationship with Owner Id</a>
-<div class="">
-<span class="badge badge-default">Tractor Vendor Relationship Process Feature.(TSET-375) Validate Tractor Vendor Relationship with Owner Id</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:53:37 AM</td>
-<td>
-<a href="#" class="linked" test-id='64' id='88'>(TSET-375) Validate Tractor Vendor Relationship with Owner Id</a>
-<div class="">
-<span class="badge badge-default">Tractor Vendor Relationship Process Feature.(TSET-375) Validate Tractor Vendor Relationship with Owner Id</span>
+<span class="badge badge-default">Equipment Console Process Feature.Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
 </div>
 </td>
 </tr>
@@ -1323,7 +932,7 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>2</span>
 </span>
 <p class="name">@AgentCommissionMaintenance</p>
 <p class="duration text-sm">2 tests</p>
@@ -1331,7 +940,7 @@ eventsCount: 5,
 <div class="test-contents d-none">
 <div class="info">
 <h4>@AgentCommissionMaintenance</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1342,9 +951,9 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:48:55 AM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:03:26 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Validate Agent Commission Maintenance in Launch Environment</a>
 <div class="">
@@ -1352,9 +961,9 @@ eventsCount: 5,
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:48:55 AM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:03:26 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='3'>Validate Agent Commission Maintenance in Launch Environment</a>
 <div class="">
@@ -1370,14 +979,16 @@ eventsCount: 5,
 <div class="test-detail">
 <span class="meta">
 <span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>2</span>
 </span>
-<p class="name">@BookLoadScenarioOutLine</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">@aa</p>
+<p class="duration text-sm">4 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@BookLoadScenarioOutLine</h4>
+<h4>@aa</h4>
 <span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1390,21 +1001,93 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>07:51:52 AM</td>
+<td>12:03:47 PM</td>
 <td>
-<a href="#" class="linked" test-id='55' id='56'>Book a Load through Agents Portal in Staging Environment</a>
+<a href="#" class="linked" test-id='17' id='18'>Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</a>
 <div class="">
-<span class="badge badge-default">Billing Feature.Book a Load through Agents Portal in Staging Environment</span>
+<span class="badge badge-default">Equipment Console Process Feature.Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>07:51:52 AM</td>
+<td>12:03:47 PM</td>
 <td>
-<a href="#" class="linked" test-id='55' id='57'>Book a Load through Agents Portal in Staging Environment</a>
+<a href="#" class="linked" test-id='17' id='19'>Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</a>
 <div class="">
-<span class="badge badge-default">Billing Feature.Book a Load through Agents Portal in Staging Environment</span>
+<span class="badge badge-default">Equipment Console Process Feature.Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:03:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='24'>Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</a>
+<div class="">
+<span class="badge badge-default">Equipment Console Process Feature.Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:03:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='25'>Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</a>
+<div class="">
+<span class="badge badge-default">Equipment Console Process Feature.Verify Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:04:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='34'>And Select Agent Reimbursement on CropReview</a>
+<div class="">
+<span class="badge badge-default">Equipment Console Process Feature.Verify Agent Reimbursement Process on EQUIPMENT CONSOLE.And Select Agent Reimbursement on CropReview</span>
 </div>
 </td>
 </tr>
@@ -1415,15 +1098,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@LocationFile</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@LocationFile</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1434,115 +1117,13 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:51:34 AM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:03:42 PM</td>
 <td>
-<a href="#" class="linked" test-id='30' id='45'>Validate Location File in Launch Environment</a>
+<a href="#" class="linked" test-id='1' id='12'>And Validate Agent Code Description and Agent is active</a>
 <div class="">
-<span class="badge badge-default">Basic File Maintenance Process Feature.Validate Location File in Launch Environment</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:51:34 AM</td>
-<td>
-<a href="#" class="linked" test-id='30' id='46'>Validate Location File in Launch Environment</a>
-<div class="">
-<span class="badge badge-default">Basic File Maintenance Process Feature.Validate Location File in Launch Environment</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@AccountFile</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@AccountFile</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:50:23 AM</td>
-<td>
-<a href="#" class="linked" test-id='30' id='31'>Validate Account File in Launch Environment</a>
-<div class="">
-<span class="badge badge-default">Basic File Maintenance Process Feature.Validate Account File in Launch Environment</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:50:23 AM</td>
-<td>
-<a href="#" class="linked" test-id='30' id='32'>Validate Account File in Launch Environment</a>
-<div class="">
-<span class="badge badge-default">Basic File Maintenance Process Feature.Validate Account File in Launch Environment</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@TractorVendorRelationshipOwnerId</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TractorVendorRelationshipOwnerId</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:53:37 AM</td>
-<td>
-<a href="#" class="linked" test-id='64' id='87'>(TSET-375) Validate Tractor Vendor Relationship with Owner Id</a>
-<div class="">
-<span class="badge badge-default">Tractor Vendor Relationship Process Feature.(TSET-375) Validate Tractor Vendor Relationship with Owner Id</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:53:37 AM</td>
-<td>
-<a href="#" class="linked" test-id='64' id='88'>(TSET-375) Validate Tractor Vendor Relationship with Owner Id</a>
-<div class="">
-<span class="badge badge-default">Tractor Vendor Relationship Process Feature.(TSET-375) Validate Tractor Vendor Relationship with Owner Id</span>
+<span class="badge badge-default">Agent Settlement Adjustments Process Feature.Validate Agent Commission Maintenance in Launch Environment.And Validate Agent Code Description and Agent is active</span>
 </div>
 </td>
 </tr>

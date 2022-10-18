@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: runners.AgentSettlingRunnerTest
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 338.876 s - in runners.AgentSettlingRunnerTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 31.748 s - in runners.AgentSettlingRunnerTest

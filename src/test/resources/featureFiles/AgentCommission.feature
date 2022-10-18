@@ -2,7 +2,7 @@ Feature: Agent Settlement Adjustments Process Feature
 
 
   #18
-  @Regression @AgentCommissionMaintenance
+  @Smoke @AgentCommissionMaintenance @bb
   Scenario Outline: Validate Agent Commission Maintenance in Launch Environment
     Given Run Test for <environment> on Browser <browser> and Enter the url for EBH
     And Login to the Agents Portal with username <username> and password <password>
@@ -17,7 +17,7 @@ Feature: Agent Settlement Adjustments Process Feature
     Then Close all open Browsers
     Examples:
       | AgentCode | environment | tableName                                           | assertValue                        | assertValue1                        | assertValue2              | browser  | username         | password      |
-      | "YNN"     | "ebhlaunch" | "[EBHLaunch].[dbo].[usp_GetAgentCommissionDetails]" | "DCC Daily Chas Chrg DCC RESIDUAL" | "BR BROKER COMMISSION BR ALL SPLIT" | "YARD Yard Pull YARD NET" | "chrome" | "SMRITIDHUNGANA" | "Legendary@1" |
+      | "YNNYNN"     | "ebhlaunch" | "[EBHLaunch].[dbo].[usp_GetAgentCommissionDetails]" | "DCC Daily Chas Chrg DCC RESIDUAL" | "BR BROKER COMMISSION BR ALL SPLIT" | "YARD Yard Pull YARD NET" | "chrome" | "SMRITIDHUNGANA" | "Legendary@1" |
 
 
     #19

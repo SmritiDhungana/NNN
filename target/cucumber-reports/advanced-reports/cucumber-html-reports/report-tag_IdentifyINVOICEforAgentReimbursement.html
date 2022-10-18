@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports (no 1) - Feature: Billing Feature</title>
+<title>Cucumber Reports (no 1) - Tag: @IdentifyINVOICEforAgentReimbursement</title>
 
 </head>
 <body>
@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>AP-RegressionsmritiBranch1</td>
               <td>1</td>
-            <td>12 Sep 2022, 07:54</td>
+            <td>18 Oct 2022, 11:56</td>
     </tr>
   </tbody>
 </table>
@@ -90,7 +90,7 @@ $(document).ready(function() {
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
-    <h2>Feature Report</h2>
+    <h2>Tag Report</h2>
       </div>
 </div>
 
@@ -109,7 +109,7 @@ $(document).ready(function() {
     <th colspan="2">Features</th>
   </tr>
   <tr>
-    <th>Feature</th>
+    <th>Tag</th>
         <th class="passed">Passed</th>
     <th class="failed">Failed</th>
     <th class="skipped">Skipped</th>
@@ -129,19 +129,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">Billing Feature</td>
-                    <td      class="passed"    >6</td>
+          <td class="tagname">@IdentifyINVOICEforAgentReimbursement</td>
+                    <td      class="passed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">6</td>
+          <td class="total">1</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="23463000000">23.463</td>
+          <td class="duration" data-value="1104000000">1.104</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -168,41 +168,33 @@ $(document).ready(function() {
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <div class="feature">
-        
-<div class="tags indention">
-  </div>
+      <div class="elements">
 
-        
-<div class="brief passed">
-  <span class="keyword indention">Feature</span>
-  <span class="name">Billing Feature</span>
-  
-
-  </div>
-
-        <div class="description indention"></div>
-
-        <div class="elements inner-level">
-                      
+                  
 <div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-featureFiles-EquipmentConsoleAgentAdjustments-feature.html">Equipment Console Process Feature</a>
+    </div>
   
   
 <div class="tags indention">
       <b>Tags:</b>
-           <a href="report-tag_Regression.html">@Regression</a>
-           <a href="report-tag_BookLoadScenarioOutLine.html">@BookLoadScenarioOutLine</a>
+           <a href="report-tag_Regressions.html">@Regressions</a>
+           <a href="report-tag_EquipmentConsole.html">@EquipmentConsole</a>
+           <a href="report-tag_IdentifyINVOICEforAgentReimbursement.html">@IdentifyINVOICEforAgentReimbursement</a>
+           <a href="report-tag_aa.html">@aa</a>
       </div>
 
   
-  <span class="lead-duration duration">23.463</span>
+  <span class="lead-duration duration">1.104</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Book a Load through Agents Portal in Staging Environment</span>
+  <span class="name">Identify INVOICE, for Agent Reimbursement Process on EQUIPMENT CONSOLE</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -213,11 +205,44 @@ $(document).ready(function() {
 
   <div id="element-1" class="collapse collapsable-details ">
     
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.setUp()</span>
+                        
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -229,119 +254,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">run test for &quot;launch&quot; on browser &quot;chrome&quot;</span>
+  <span class="name">Locate a Record from Database, Agent Status must have a Status of Agent Review or Corp Review &quot;ebhlaunch&quot; &quot;[Evans].[dbo].[InvoiceRegisterRecord]&quot; &quot;01/01/2022&quot;</span>
   
-  <span class="lead-duration duration">1.203</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">enter the url</span>
-  
-  <span class="lead-duration duration">0.826</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">login on the agents portal with username &quot;pss&quot; and password &quot;taffy&quot;</span>
-  
-  <span class="lead-duration duration">0.856</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">navigate to the bookload page</span>
-  
-  <span class="lead-duration duration">4.996</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">enter billto as &quot;ICARBGA&quot; from as &quot;WCH00741 &quot; and to as &quot;WCH00742&quot;</span>
-  
-  <span class="lead-duration duration">14.820</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">close all open browsers</span>
-  
-  <span class="lead-duration duration">0.762</span>
+  <span class="lead-duration duration">1.104</span>
 
   </div>
 
@@ -361,12 +281,61 @@ $(document).ready(function() {
 
 
     
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-4" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.takeScreenshotOnFailure(io.cucumber.java.Scenario)</span>
+                        
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">stepDefinitions.EquipmentConsoleAgentAdjustmentsStepDef.tearDown()</span>
+                        
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
 
   </div>
 </div>
 
-                  </div>
-
+        
       </div>
     </div>
   </div>
