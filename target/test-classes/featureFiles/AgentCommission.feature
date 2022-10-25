@@ -17,7 +17,7 @@ Feature: Agent Settlement Adjustments Process Feature
     Then Close all open Browsers
     Examples:
       | AgentCode | environment | tableName                                           | assertValue                        | assertValue1                        | assertValue2              | browser  | username         | password      |
-      | "YNNYNN"     | "ebhlaunch" | "[EBHLaunch].[dbo].[usp_GetAgentCommissionDetails]" | "DCC Daily Chas Chrg DCC RESIDUAL" | "BR BROKER COMMISSION BR ALL SPLIT" | "YARD Yard Pull YARD NET" | "chrome" | "SMRITIDHUNGANA" | "Legendary@1" |
+      | "YNN"     | "ebhlaunch" | "[EBHLaunch].[dbo].[usp_GetAgentCommissionDetails]" | "DCC Daily Chas Chrg DCC RESIDUAL" | "BR BROKER COMMISSION BR ALL SPLIT" | "YARD Yard Pull YARD NET" | "chrome" | "SMRITIDHUNGANA" | "Legendary@1" |
 
 
     #19

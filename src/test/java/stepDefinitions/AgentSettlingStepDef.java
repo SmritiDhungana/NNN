@@ -68,6 +68,7 @@ public class AgentSettlingStepDef {
             TakesScreenshot ts = (TakesScreenshot) driver;
             byte[] src = ts.getScreenshotAs(OutputType.BYTES);
             scenario.attach(src, "image/png", "screenshot");
+            System.out.println("Closing EBH ........");
         }
     }
 

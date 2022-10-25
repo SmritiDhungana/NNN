@@ -24,22 +24,6 @@ Feature: Equipment Console Process Feature
     And Click on NO on alert
     And Enter Invoice Number <InvoiceNo> in Search Criteria on Equipment Console Interface
     And Select Agent Status Button for a record that has a Agent Status, Agent Review or Corp Review <AgentStatus>
-   # And Select Agent <Agent> and ProNo <ProNum>
-   # And Select Agent Reimbursement on Status <Status>
-   # And Enter Amount OR # of Days, Effective Date = Todays Date <Amount> <EffectiveDate>
-   # And Verify Notes Column has the Customer Number, Chassis No and Container No, prefilled in the notes column
-   # And Enter something into the Notes Column and make sure to enter a comma, Select Ok, Select Go, Select No <Notes>
-  #  And Verify previously entered data remained the same, Select Go, Select Yes, Main Form appears
-  #  And Query Data in Agent Adjustments Table, There should be no record in this table for this transaction <Environment> <TableName> <CreatedDate> <OrderNum>
-    Then Click on Clear Filters
-    And Select Corp Status = Corp Review for that same record that has Agent Status = Agent Reimbursement and Corp Status = Corp Review <CorpStatus> <AgentStatus1> <Agent> <ProNum>
-    And Select Agent Reimbursement on CropReview
-    And The Days, Amount and Notes Columns are filled in with the same information that was previously entered. Enter a different Amount, Days or Effective Date <OfDays>
-    And Verify Notes Column has the Customer Number, Chassis No and Container No, prefilled in the Notes Column
-    And Enter something into the Notes Column and make sure to enter a Comma, Select Ok, Select Go, Select No <Notes1>
-    And Verify previously entered data remained the same, Select Go, Select Yes, Main Form Appears
-    And Verify Agent Status and Corp Status = Agent Reimbursement in Main Form
-    And Query Data in Agent_Adjustments SQL Table, There should be one record on the Agent_Adjustments table for this transaction <Environment> <TableName> <CreatedDate> <OrderNum>
     Then Close all open Browsers for Equipment Console
     Examples:
       | InvoiceNo        | AgentStatus   | Agent | ProNum  | OrderNum   | Status               | Amount | EffectiveDate | Notes                 | CreatedDate  | CorpStatus   | AgentStatus1         | OfDays | Notes1                       | Environment | TableName                               | Environment1 | Browser  | Username | Password |

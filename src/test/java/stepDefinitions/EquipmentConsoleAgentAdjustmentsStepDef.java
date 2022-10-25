@@ -40,7 +40,7 @@ public class EquipmentConsoleAgentAdjustmentsStepDef {
 
     @Before
     public static void setUp() {
-        System.out.println("Launch EBH ........");
+        System.out.println("Launching EBH ........");
     }
 
 
@@ -50,13 +50,15 @@ public class EquipmentConsoleAgentAdjustmentsStepDef {
             TakesScreenshot ts = (TakesScreenshot) driver;
             byte[] src = ts.getScreenshotAs(OutputType.BYTES);
             scenario.attach(src, "image/png", "screenshot");
+            System.out.println("Closing EBH ........");
+            driver.close();
         }
     }
 
-    @After (order = 0)
-    public void tearDown() {
-        System.out.println("Close EBH ........");
-    }
+  //  @After (order = 0)
+ //   public void tearDown() {
+ //       System.out.println("Closing EBH ........");
+ //   }
 
 
 

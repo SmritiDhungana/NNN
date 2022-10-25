@@ -1,2 +1,0 @@
-file:src/test/resources/featureFiles/AgentCommission.feature:20
-file:src/test/resources/featureFiles/EquipmentConsoleAgentAdjustments.feature:52
